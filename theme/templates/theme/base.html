@@ -8,8 +8,10 @@
     <link href="/theme/css/style.css" rel="stylesheet">
   </head>
   <body>
-    {% include "theme/menu.html" %}
-    {% block body %} {% endblock body %}
+    <div class="background">
+      {% include "theme/menu.html" %}
+      {% block body %} {% endblock body %}
+    </div>
     <script src="/theme/js/bootstrap.bundle.min.js"></script>
     <script src="/theme/js/konami.js"></script>
     <script src="/theme/js/game.js"></script>

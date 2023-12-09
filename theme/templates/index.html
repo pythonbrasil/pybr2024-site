@@ -2,17 +2,30 @@
 {% set home = (articles|get_by_slug("em-construcao")) %}
 
 {% block body%}
-<div class="px-4 py-5 my-5 text-center">
-    <h1 class="display-5 fw-bold text-body-emphasis">{{home.title}}</h1>
-    <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4">
-            {{home.content}}
-        </p>
+<div class="container">
+
+  <section class="px-4 py-5 my-5 text-center">
+    <div class="row">
+      <div class="col-8">
+        <img src="/theme/images/logo.png" alt="logo do evento python brasil 2024" class="img-fluid logo">
+      </div>
+      <div class="col-4 d-flex align-items-center">
+        <div>
+          <h1 class="display-5 fw-bold text-white">{{home.title}}</h1>
+          <div class="mb-4 text-white">
+            {{ home.content }}
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-<section id="sobre">
-</section>
-<section id="programacao">
+  </section>
+  <section id="sobre">
+    <h2 class="display-5 fw-bold text-white">Sobre o evento!</h2>
+    <div class="mb-4 text-white">
+      <p>Em Construção!</p>
+    </div>
+  </section>
+<!--<section id="programacao">
 </section>
 <section id="keynotes">
 </section>
@@ -21,102 +34,81 @@
 <section id="parceiros">
 </section>
 <section id="FAQ">
-</section>
-<section id="footer">
-    <div class="row">
-        <div class="col-lg">
-          <h4>Nossas Redes</h4>
-          <ul class="list-group list-group-flush">
-            {% if SOCIAL.twitter %}
-            <li class="list-group-item">
-              <a href="{{SOCIAL.twitter}}" target="_blank" class="icon twitter">
-                {% include "svg/twitter.svg" %} Twitter
-              </a>
-            </li>
-            {% endif %} {% if SOCIAL.facebook %}
-            <li class="list-group-item">
-              <a href="{{SOCIAL.facebook}}" target="_blank" class="icon facebook">
-                {% include "svg/facebook.svg" %} Facebook
-              </a>
-            </li>
-            {% endif %} {% if SOCIAL.instagram %}
-            <li class="list-group-item">
-              <a
-                href="{{SOCIAL.instagram}}"
-                class="icon instagram"
-                target="_blank"
-              >
-                {% include "svg/instagram.svg" %} Instagram
-              </a>
-            </li>
-            {% endif %} {% if SOCIAL.linkedin %}
-            <li class="list-group-item">
-              <a
-                href="{{SOCIAL.linkedin}}"
-                class="icon linkedin"
-                target="_blank"
-              >
-                {% include "svg/linkedin.svg" %} Linkedin
-              </a>
-            </li>
-            {% endif %} {% if SOCIAL.youtube %}
-            <li class="list-group-item">
-              <a
-                href="{{SOCIAL.youtube}}"
-                class="icon youtube"
-                target="_blank"
-                >{% include "svg/youtube.svg" %} Youtube
-              </a>
-            </li>
-            {% endif %} {% if SOCIAL.flickr %}
-            <li class="list-group-item">
-              <a
-                href="{{SOCIAL.flickr}}"
-                class="icon flickr"
-                target="_blank"
-                >{% include "svg/flickr.svg" %} Flickr
-              </a>
-            </li>
-            {% endif %} {% if SOCIAL.email %}
-            <li class="list-group-item">
-              <a
-                href="{{SOCIAL.email}}"
-                class="icon email"
-                target="_blank"
-                >{% include "svg/envelope.svg" %} E-mail
-              </a>
-            </li>
-            {% endif %} {% if SOCIAL.telegram %}
-            <li class="list-group-item">
-              <a
-                href="{{SOCIAL.telegram}}"
-                class="icon telegram"
-                target="_blank"
-                >{% include "svg/telegram.svg" %} Telegram
-              </a>
-            </li>
-            {% endif %}
-          </ul>
-        </div>
-        <div class="col-lg">
-          <h4>Links da APyB</h4>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-              <a href="http://python.org.br/"> APyB </a>
-            </li>
-            <li class="list-group-item">
-              <a href="http://python.org.br/cdc/"> Código de conduta </a>
-            </li>
-            <li class="list-group-item">
-              <a href="https://forms.gle/asFpjcfLLcqLzFgK8" target="_blank"> Formulário para relatos de Código de conduta </a>
-            </li>
-            <li class="list-group-item">
-              <a href="http://python.org.br/premio-dorneles-tremea-jean-ferri">
-                Dorneles Tremea/Jean Ferri
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-</section>
+</section> -->
+</div>
+<footer id="footer">
+  <div class="row">
+    <div class="col-lg">
+      <h4>Nossas Redes</h4>
+      <ul class="list-group list-group-flush">
+        {% if SOCIAL.twitter %}
+        <li class="list-group-item">
+          <a href="{{SOCIAL.twitter}}" target="_blank" class="icon twitter">
+            {% include "svg/twitter.svg" %} Twitter
+          </a>
+        </li>
+        {% endif %} {% if SOCIAL.facebook %}
+        <li class="list-group-item">
+          <a href="{{SOCIAL.facebook}}" target="_blank" class="icon facebook">
+            {% include "svg/facebook.svg" %} Facebook
+          </a>
+        </li>
+        {% endif %} {% if SOCIAL.instagram %}
+        <li class="list-group-item">
+          <a href="{{SOCIAL.instagram}}" class="icon instagram" target="_blank">
+            {% include "svg/instagram.svg" %} Instagram
+          </a>
+        </li>
+        {% endif %} {% if SOCIAL.linkedin %}
+        <li class="list-group-item">
+          <a href="{{SOCIAL.linkedin}}" class="icon linkedin" target="_blank">
+            {% include "svg/linkedin.svg" %} Linkedin
+          </a>
+        </li>
+        {% endif %} {% if SOCIAL.youtube %}
+        <li class="list-group-item">
+          <a href="{{SOCIAL.youtube}}" class="icon youtube" target="_blank">{% include "svg/youtube.svg" %} Youtube
+          </a>
+        </li>
+        {% endif %} {% if SOCIAL.flickr %}
+        <li class="list-group-item">
+          <a href="{{SOCIAL.flickr}}" class="icon flickr" target="_blank">{% include "svg/flickr.svg" %} Flickr
+          </a>
+        </li>
+        {% endif %} {% if SOCIAL.email %}
+        <li class="list-group-item">
+          <a href="{{SOCIAL.email}}" class="icon email" target="_blank">{% include "svg/envelope.svg" %} E-mail
+          </a>
+        </li>
+        {% endif %} {% if SOCIAL.telegram %}
+        <li class="list-group-item">
+          <a href="{{SOCIAL.telegram}}" class="icon telegram" target="_blank">{% include "svg/telegram.svg" %}
+            Telegram
+          </a>
+        </li>
+        {% endif %}
+      </ul>
+    </div>
+    <div class="col-lg">
+      <h4>Links da APyB</h4>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <a href="http://python.org.br/"> APyB </a>
+        </li>
+        <li class="list-group-item">
+          <a href="http://python.org.br/cdc/"> Código de conduta </a>
+        </li>
+        <li class="list-group-item">
+          <a href="https://forms.gle/asFpjcfLLcqLzFgK8" target="_blank"> Formulário para relatos de Código de conduta
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="http://python.org.br/premio-dorneles-tremea-jean-ferri">
+            Dorneles Tremea/Jean Ferri
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
 {% endblock %}
