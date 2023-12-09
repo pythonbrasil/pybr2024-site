@@ -9,6 +9,7 @@ import datetime
 from invoke import task
 from invoke.main import program
 from invoke.util import cd
+from util.cname import move_cname
 from pelican import main as pelican_main
 from pelican.server import ComplexHTTPRequestHandler, RootedHTTPServer
 from pelican.settings import DEFAULT_CONFIG, get_settings_from_file
@@ -43,17 +44,18 @@ def clean(c):
 @task
 def build(c):
     """Build local version of site"""
-    pelican_run('-s {settings_base}'.format(**CONFIG))
+    pelican_run('-t theme -s  {settings_base}'.format(**CONFIG))
+    move_cname()
 
 @task
 def rebuild(c):
     """`build` with the delete switch"""
-    pelican_run('-d -s {settings_base}'.format(**CONFIG))
+    pelican_run('-d -t theme -s {settings_base}'.format(**CONFIG))
 
 @task
 def regenerate(c):
     """Automatically regenerate site upon file modification"""
-    pelican_run('-r -s {settings_base}'.format(**CONFIG))
+    pelican_run('-r -t theme -s {settings_base}'.format(**CONFIG))
 
 @task
 def serve(c):
@@ -92,7 +94,7 @@ def livereload(c):
     from livereload import Server
 
     def cached_build():
-        cmd = '-s {settings_base} -e CACHE_CONTENT=true LOAD_CONTENT_CACHE=true'
+        cmd = '-t theme -s {settings_base} -e CACHE_CONTENT=true LOAD_CONTENT_CACHE=true'
         pelican_run(cmd.format(**CONFIG))
 
     cached_build()
@@ -127,7 +129,7 @@ def livereload(c):
 @task
 def publish(c):
     """Publish to production via rsync"""
-    pelican_run('-s {settings_publish}'.format(**CONFIG))
+    pelican_run('-t theme -s {settings_publish}'.format(**CONFIG))
     c.run(
         'rsync --delete --exclude ".DS_Store" -pthrvz -c '
         '-e "ssh -p {ssh_port}" '

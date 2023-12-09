@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="{{DEFAULT_LANG}}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{SITENAME}}</title>
+    <link href="/theme/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    {% include "theme/menu.html" %}
+    {% block body %} {% endblock body %}
+    <script src="/theme/js/bootstrap.bundle.min.js"></script>
+    <script src="/theme/js/konami.js"></script>
+    <script src="/theme/js/game.js"></script>
+    <script src="/theme/js/egg.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1LFK00JXP6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-1LFK00JXP6');
+    </script>
+  </body>
+</html>
