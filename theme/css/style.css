@@ -1,0 +1,32 @@
+html, body {
+    background-color: #233970;
+}
+.background {
+    background: url('/theme/images/background.png');
+}
+
+section {
+    min-height: 100vh;
+}
+
+.icon svg {
+    width: 1em;
+    fill: #000;
+}
+
+h1.home-title {
+    color: #fff!important;
+}
+
+p .home-content {
+    color: #fff!important;
+}
+
+
+#footer {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-left: 32px;
+    padding-right: 32px;
+    background-color: #fff;
+}
