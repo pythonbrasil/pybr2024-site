@@ -87,6 +87,7 @@ def reserve(c):
 def preview(c):
     """Build production version of site"""
     pelican_run('-s {settings_publish}'.format(**CONFIG))
+    move_cname()
 
 @task
 def livereload(c):
@@ -130,6 +131,7 @@ def livereload(c):
 def publish(c):
     """Publish to production via rsync"""
     pelican_run('-t theme -s {settings_publish}'.format(**CONFIG))
+    move_cname()
     c.run(
         'rsync --delete --exclude ".DS_Store" -pthrvz -c '
         '-e "ssh -p {ssh_port}" '
