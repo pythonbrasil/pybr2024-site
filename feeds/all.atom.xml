@@ -1,2 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Python Brasil 2023</title><link href="https://2024.pythonbrasil.org.br/" rel="alternate"></link><link href="https://2024.pythonbrasil.org.br/feeds/all.atom.xml" rel="self"></link><id>https://2024.pythonbrasil.org.br/</id><updated>2024-01-01T12:00:00-03:00</updated><entry><title>Em Construção</title><link href="https://2024.pythonbrasil.org.br/em-construcao.html" rel="alternate"></link><published>2024-01-01T12:00:00-03:00</published><updated>2024-01-01T12:00:00-03:00</updated><author><name>Python Brasil</name></author><id>tag:2024.pythonbrasil.org.br,2024-01-01:/em-construcao.html</id><summary type="html">&lt;p&gt;Em Construção&lt;/p&gt;</summary><content type="html">&lt;p&gt;Estamos trabalhando para logo trazer mais informações&lt;/p&gt;</content><category term="Home"></category></entry></feed>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Python Brasil 2023</title><link href="https://2024.pythonbrasil.org.br/" rel="alternate"></link><link href="https://2024.pythonbrasil.org.br/feeds/all.atom.xml" rel="self"></link><id>https://2024.pythonbrasil.org.br/</id><updated>2024-01-31T12:00:00-03:00</updated><entry><title>sobre o evento</title><link href="https://2024.pythonbrasil.org.br/sobre.html" rel="alternate"></link><published>2024-01-31T12:00:00-03:00</published><updated>2024-01-31T12:00:00-03:00</updated><author><name>Python Brasil</name></author><id>tag:2024.pythonbrasil.org.br,2024-01-31:/sobre.html</id><summary type="html">&lt;p&gt;Bloco Principal da Home&lt;/p&gt;</summary><content type="html">&lt;section id="sobre"&gt;
+&lt;div class="mb-4 text-white"&gt;
+    &lt;p&gt;
+        &lt;img src="/theme/images/data.png" alt="16 de a 21 de outubro, no Rio de Janeiro - RJ" class="img-fluid"&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;img src="/theme/images/ccbr-rj.png" alt="centro de convencoes bolsa do rio, praça xv, rio de janeiro - rj" class="img-fluid"&gt;
+    &lt;/p&gt;
+
+    &lt;p class="partnership"&gt;&lt;a href="theme/media_kits/proposta-de-patrocinio-pybr-2024.pdf" target="_blank"&gt;proposta de patrocínio (pt-br)&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/section&gt;</content><category term="Home"></category></entry><entry><title>Em Construção</title><link href="https://2024.pythonbrasil.org.br/em-construcao.html" rel="alternate"></link><published>2024-01-01T12:00:00-03:00</published><updated>2024-01-01T12:00:00-03:00</updated><author><name>Python Brasil</name></author><id>tag:2024.pythonbrasil.org.br,2024-01-01:/em-construcao.html</id><summary type="html">&lt;p&gt;Em Construção&lt;/p&gt;</summary><content type="html">&lt;p&gt;Estamos trabalhando para logo trazer mais informações&lt;/p&gt;</content><category term="Home"></category></entry></feed>
