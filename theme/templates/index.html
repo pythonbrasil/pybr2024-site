@@ -1,28 +1,20 @@
 {% extends "theme/base.html" %}
-{% set home = (articles|get_by_slug("em-construcao")) %}
+{% set home = (articles|get_by_slug("sobre")) %}
 
 {% block body%}
 <div class="container">
-
-  <section class="px-4 py-5 my-5 text-center">
+  <section class="px-4 text-center main-container">
     <div class="row">
       <div class="col-8">
         <img src="/theme/images/logo.png" alt="logo do evento python brasil 2024" class="img-fluid logo">
       </div>
       <div class="col-4 d-flex align-items-center">
         <div>
-          <h1 class="display-5 fw-bold text-white">{{home.title}}</h1>
           <div class="mb-4 text-white">
             {{ home.content }}
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section id="sobre">
-    <h2 class="display-5 fw-bold text-white">Sobre o evento!</h2>
-    <div class="mb-4 text-white">
-      <p>Em Construção!</p>
     </div>
   </section>
 <!--<section id="programacao">

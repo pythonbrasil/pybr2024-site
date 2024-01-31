@@ -1,6 +1,14 @@
 html, body {
     background-color: #233970;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
+
+a:link, a:visited, a:hover, a:active{
+    color: #fff;
+}
+
 .background {
     background: url('/theme/images/background.png');
 }
@@ -22,11 +30,32 @@ p .home-content {
     color: #fff!important;
 }
 
+.logo {
+    max-width: 50%;
+}
+
 
 #footer {
     padding-top: 64px;
     padding-bottom: 64px;
     padding-left: 32px;
     padding-right: 32px;
-    background-color: #fff;
+    background-color: #233970;
+}
+
+#footer .col-lg {
+    margin-bottom: 1em;
+}
+
+
+.main-container {
+    padding-top: 10em;
+}
+
+.list-group-item {
+    background-color: #233970;
+}
+
+.list-group-item a {
+    text-decoration: none;
 }
