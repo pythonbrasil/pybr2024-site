@@ -1,19 +1,79 @@
 html, body {
-    background-color: #233970;
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
+    background-color: #ccc;
+    color: #222;
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
 }
 
+
 a:link, a:visited, a:hover, a:active{
-    color: #fff;
+    fill: #fba800;
+    color: #fba800;
+    font-weight: bolder;
+    text-shadow: #F14529 2px 2px 1px;
+    font-family: 'Inter', sans-serif;
+}
+
+a.icon svg {
+    fill: #fba800;
+}
+
+.cload-images {
+    position: relative;
+    min-height: 400px;
+
+}
+
+.img-cload-1 {
+    position: absolute;
+    height: 200px;
+}
+.img-cload-2 {
+    position: absolute;
+    height: 100px;
+    bottom: 60px;
+}
+.img-cload-3 {
+    position: absolute;
+    height: 200px;
+    right: 50px;
+}
+.img-cload-4 {
+    position: absolute;
+    height: 100px;
+    bottom: 30px;
+    right: 100px;
+}
+
+.img-local {
+    height: 300px;
 }
 
 .background {
-    background: url('/theme/images/background.png');
+    background: url('/theme/images/bg-white.png');
 }
 
-section {
+.header-container {
+    background: url('/theme/images/bg-yellow.png');
+    width: 100%;
+}
+
+.text-custom {
+    font-family: 'Caveat', sans-serif;
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: #292E5E 2px 2px 1px;
+}
+
+.subtitle {
+    font-family: 'Caveat', sans-serif;
+    color: #222;
+    font-size: 5em;
+    font-weight: bold;
+}
+
+.section {
     min-height: 100vh;
 }
 
@@ -47,6 +107,13 @@ p .home-content {
     margin-bottom: 1em;
 }
 
+#footer h4 {
+    font-family: 'Caveat', sans-serif;
+    color: #fba800;
+    font-size: 2.5em;
+    font-weight: bolder;
+    text-shadow: #F14529 2px 2px 1px;
+}
 
 .main-container {
     padding-top: 10em;
@@ -58,4 +125,33 @@ p .home-content {
 
 .list-group-item a {
     text-decoration: none;
+}
+
+
+.btn-patrocinio:hover { 
+    color: #fff !important;
+}
+
+a.btn-patrocinio { 
+    background-color: #222;
+    color: #fff !important;
+    font-family: 'Caveat', sans-serif;
+    text-shadow: none;
+    font-size: 2.5em;
+    font-weight: bolder;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: inline-block;
+    border-radius: 10px;
+    transform: skewX(-5deg);
+    transition: all 0.2s;
+}
+
+a.btn-patrocinio:hover { 
+    background-color: #fff;
+    color: #222 !important;
+    transform: skewX(0deg);
+    transition: all 0.2s;
+    box-shadow: 2px 2px #000;
 }
