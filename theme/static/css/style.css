@@ -18,31 +18,64 @@ a.icon svg {
     fill: #fba800;
 }
 
+.endereco {
+    color: #DCDBAD!important
+}
+
 .cload-images {
     position: relative;
     min-height: 400px;
 
 }
+@keyframes floating {
+    0% {
+        transform: translatey(0);
+        transform: scale(1);
+    }
+    50% {
+        transform: translatey(30px);
+        transform: scale(1.3);
+    }
+    100% {
+        transform: translatey(0);
+        transform: scale(1);
+    }
+}
 
 .img-cload-1 {
     position: absolute;
     height: 200px;
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
 }
 .img-cload-2 {
     position: absolute;
     height: 100px;
     bottom: 60px;
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 .img-cload-3 {
     position: absolute;
     height: 200px;
     right: 50px;
+    animation-delay: 1s;
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 .img-cload-4 {
     position: absolute;
     height: 100px;
     bottom: 30px;
     right: 100px;
+    animation-delay: 0.5s;
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 
 .img-local {
@@ -71,6 +104,7 @@ a.icon svg {
     color: #222;
     font-size: 5em;
     font-weight: bold;
+    
 }
 
 .section {
