@@ -1,11 +1,11 @@
 from util.jinja_filters import get_by_slug
 
 
-SITEYEAR = 2023
+SITEYEAR = 2024
 SITEURL = ''
 
 AUTHOR = 'Python Brasil'
-SITENAME = 'Python Brasil 2023'
+SITENAME = 'Python Brasil 2024'
 THEME = 'theme' 
 PATH = 'content'
 TIMEZONE = 'America/Bahia'
@@ -50,17 +50,17 @@ SITE_META_KEYWORDS = f"Python Brasil, Python Brasil {SITEYEAR}, evento python, c
 SITE_META_DESCRIPTION = "Python Brasil é o maior evento sobre linguagem de programação Python do Brasil. Feito pela comunidade para a comunidade, tem o objetivo de difundir a linguagem, promover a troca de experiências e manter a comunidade crescendo igualmente em público e impacto social."
 
 EVENTO = {
-    'inscricao':'',
-    'submissao':'',
-    'data_evento': '',
-    'cidade': ''
+    # 'inscricao':'',
+    # 'submissao':'',
+    # 'data_evento': '',
+    # 'cidade': ''
 }
 
 PLANOS = {
-    'pt_br':'',
-    'en':'',
+    'pt_br':'https://2024.pythonbrasil.org.br/theme/media_kits/proposta-de-patrocinio-pybr-2024.pdf',
+    # 'en':'',
 }
 
 GUIA = {
-    'pt_br':'',
+    # 'pt_br':'',
 }
