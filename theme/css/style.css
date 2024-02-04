@@ -39,35 +39,33 @@ a.icon svg {
 }
 
 .img-cload-1 {
-    position: absolute;
-    height: 200px;
+    width: 40%;
     animation-name: floating;
     animation-duration: 4s;
     animation-iteration-count: infinite;
 
 }
+
 .img-cload-2 {
-    position: absolute;
-    height: 100px;
-    bottom: 60px;
+    width: 40%;
+    margin-left: 2em;
     animation-name: floating;
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }
+
 .img-cload-3 {
-    position: absolute;
-    height: 200px;
-    right: 50px;
+    width: 60%;
+    margin: 0.5em;
     animation-delay: 1s;
     animation-name: floating;
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }
+
 .img-cload-4 {
-    position: absolute;
-    height: 100px;
-    bottom: 30px;
-    right: 100px;
+    width: 20%;
+    margin-left: 4em;
     animation-delay: 0.5s;
     animation-name: floating;
     animation-duration: 4s;
