@@ -47,7 +47,7 @@ a.icon svg {
 }
 
 .img-cload-2 {
-    width: 40%;
+    width: 25%;
     margin-left: 2em;
     animation-name: floating;
     animation-duration: 4s;
@@ -55,7 +55,7 @@ a.icon svg {
 }
 
 .img-cload-3 {
-    width: 60%;
+    width: 25%;
     margin: 0.5em;
     animation-delay: 1s;
     animation-name: floating;
@@ -64,7 +64,7 @@ a.icon svg {
 }
 
 .img-cload-4 {
-    width: 20%;
+    width: 15%;
     margin-left: 4em;
     animation-delay: 0.5s;
     animation-name: floating;
