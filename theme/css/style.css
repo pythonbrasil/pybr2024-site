@@ -10,19 +10,15 @@ a:link, a:visited, a:hover, a:active{
     fill: #fba800;
     color: #fba800;
     font-weight: bolder;
-    text-shadow: #F14529 2px 2px 1px;
-    font-family: 'Inter', sans-serif;
 }
 
 a.icon svg {
     fill: #fba800;
+    margin-right: 0.5em;
 }
 
-.endereco {
-    color: #DCDBAD!important
-}
-
-.cload-images {
+.cloud-images {
+    padding-top: 1em;
     position: relative;
     min-height: 400px;
 
@@ -91,12 +87,11 @@ a.icon svg {
     width: 100%;
 }
 
-.text-custom {
-    font-family: 'Caveat', sans-serif;
-    color: white;
-    font-size: 3em;
+.text-right-header {
+    font-size: 1.2em;
+    text-shadow: none;
     font-weight: bold;
-    text-shadow: #292E5E 2px 2px 1px;
+    font-family: 'Caveat', sans-serif;
 }
 
 .subtitle {
@@ -125,7 +120,7 @@ p .home-content {
 }
 
 .logo {
-    max-width: 50%;
+    max-width: 75%;
 }
 
 
@@ -146,7 +141,10 @@ p .home-content {
     color: #fba800;
     font-size: 2.5em;
     font-weight: bolder;
-    text-shadow: #F14529 2px 2px 1px;
+}
+
+#footer a:hover {
+    color: #fff;
 }
 
 .main-container {
@@ -161,31 +159,14 @@ p .home-content {
     text-decoration: none;
 }
 
-
-.btn-patrocinio:hover { 
-    color: #fff !important;
+.btn.btn-primary {
+    background-color: #324D8A;
+    border-color: #324D8A;
+    font-weight: normal;
+    color: #fff;
 }
 
-a.btn-patrocinio { 
-    background-color: #222;
-    color: #fff !important;
-    font-family: 'Caveat', sans-serif;
-    text-shadow: none;
-    font-size: 2.5em;
-    font-weight: bolder;
-    padding: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    display: inline-block;
-    border-radius: 10px;
-    transform: skewX(-5deg);
-    transition: all 0.2s;
+.btn.btn-primary:hover {
+    color:#fba800;
 }
 
-a.btn-patrocinio:hover { 
-    background-color: #fff;
-    color: #222 !important;
-    transform: skewX(0deg);
-    transition: all 0.2s;
-    box-shadow: 2px 2px #000;
-}
