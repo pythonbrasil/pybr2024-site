@@ -2,82 +2,29 @@
 {% set home = (articles|get_by_slug("sobre")) %}
 
 {% block body%}
-<section class="px-4 text-center header-container">
-  <div class="row">
-    <div class="col-lg-6 col-sm-12 col-md-6 p-5">
-      <img src="/theme/images/logo-bg-yellow.png" alt="logo do evento python brasil 2024" class="img-fluid logo">
+<section id="sobre" class="p-5">
+  <div class="row justify-content-md-center">
+    <div class="col-lg-4 col-sm-4 col-md-4">
+      <img src="/theme/images/logo.png" alt="logo do evento python brasil 2024" class="img-fluid logo">
     </div>
-    <div class="col-12 col-md-5 p-5">
-      <div class="text-right-header text-end">
-        16 a 21 de outubro de 2024<br>
-        Centro de Convenções Bolsa do Rio<br>
-        Praça XV - Rio de Janeiro - RJ<br>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="sobre" class="p-4 event-container">
-  <div class="row">
-    <div class="col-lg-6 col-sm-12 col-md-6">
-      <h2 class="subtitle">O evento</h2>
-      <p>
-        A Python Brasil é um evento feito pela comunidade para a Comunidade.
-      </p>
-      <p>
-        A edição brasileira é a maior conferência da linguagem de programação Python da América Latina. A Python Brasil
-        orgulha-se de ser um ambiente seguro, amistoso, inclusivo e acessível, onde todas as pessoas são bem-vindas e
-        possam se sentir à vontade, aproveitando o melhor que o evento tem a oferecer.
-      </p>
-    </div>
-    <div class="col-lg-6 col-sm-12 col-md-6">
-      <div class="cloud-images p4">
-          <p>
-            <img src="/theme/images/blob-16.png" alt="imagens do evento anterior" class="img-fluid img-cload-1">
-            <img src="/theme/images/blob-19.png" alt="imagens do evento anterior" class="img-fluid img-cload-2">
-          </p>
+    <div class="col-lg-4 offset-lg-1">
+        <h1 class="col-lg-12">
+            16 A 21 DE OUTUBRO DE 2024
+        </h1>
+        <h2 class="col-lg-12">
+            RIO DE JANEIRO - RJ
+        </h2>
         <p>
-          <img src="/theme/images/blob-11.png" alt="imagens do evento anterior" class="img-fluid img-cload-3">
-          <img src="/theme/images/blob-21.png" alt="imagens do evento anterior" class="img-fluid img-cload-4"></p>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="local" class="p-4 text-center local-container">
-  <div class="row">
-    <div class="col-lg-6 col-sm-12 col-md-6 text-start">
-      <h2 class="subtitle">O local</h2>
-      <p>
-        As palestras acontecerão no Centro de Convenções Bolsa de Valores, na Praça XV, um local central no Rio de
-        Janeiro, em um auditório com capacidade para até 1000 pessoas.
-      </p>
-      <p class="text-center">
-        <iframe width="80%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.2998927601207!2d-43.17701722501305!3d-22.902306979258235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9981e20355b637%3A0x908e903f9521cbdf!2sEdificio%20Bolsa%20do%20Rio!5e0!3m2!1sen!2sdo!4v1707066182252!5m2!1sen!2sdo" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </p>
-    </div>
-    <div class="col-lg-6 col-sm-12 col-md-6">
-      <div class="p4">
-        <img src="/theme/images/local.png" alt="imagens do evento anterior" class="img-fluid img-local">
-      </div>
-    </div>
-  </div>
-</section>
-<section id="patrocine" class="p-4 text-center local-container">
-  <div class="row">
-    <div class="col-12">
-      <h2 class="subtitle">Como patrocinar o evento</h2>
-      <p>
-        Todos os anos, temos o objetivo de fazer um evento cada vez mais transformador. E para que um evento desse porte aconteça, dependemos de indivíduos e empresas que acreditam e apoiam a comunidade Python e que entendem a importância de eventos como a Python Brasil para exposição da sua marca, divulgação do seu produto e para o recrumentamento e seleção de indivíduos para trabalhar com tecnologia.
-      </p>
-      <p>
-        Caso você, ou a sua empresa, tenham interesse em patrocinar a Python Brasil 2024, a nossa proposta de patrocínio segue abaixo - avalie-a e entre em contato conosco através do e-mail <a href="mailto:eventos@python.org.br">eventos @ python.org.br</a> para saber como fazer parte desse evento.
-      </p>
-      <p>
+          <i class="fa-solid fa-location-dot"></i> Centro de Convenções Bolsa do Rio - Praça XV
+        </p>
         <a href="theme/media_kits/proposta-de-patrocinio-pybr-2024.pdf" target="_blank" class="btn btn-primary">
-          plano de patrocínio (pt-br)
+          proposta de patrocínio
         </a>
-      </p>
-    </div>
+      </div>
   </div>
+</section>
+<section id="cidade">
+  <img src="/theme/images/rj-picture.png" alt="pôr do sol na praia de ipanema, no rio de janeiro" class="img-fluid">
 </section>
 <!--<section id="programacao">
 </section>
@@ -90,60 +37,67 @@
 <section id="FAQ">
 </section> -->
 <footer id="footer">
-  <div class="row">
-    <div class="col-lg">
-      <h4>Nossas Redes</h4>
-      <ul class="list-group list-group-flush">
+  <div class="row p-5">
+    <div class="col-lg-6">
+      <img src="/theme/images/logo.png" alt="logo do evento python brasil 2024" class="logo">
+      <p>
+        Python Brasil é uma conferência sem fins lucrativos dirigida por voluntários para promover a linguagem de programação Python de código aberto.
+        A conferência é apoiado pela Associação Python Brasil (APyB).
+      </p>
+      <ul class="list-group list-group-flush list-group-horizontal">
         {% if SOCIAL.twitter %}
         <li class="list-group-item">
-          <a href="{{SOCIAL.twitter}}" target="_blank" class="icon twitter">
-            {% include "svg/twitter.svg" %} Twitter
+          <a href="{{SOCIAL.twitter}}" target="_blank">
+            <i class="fa-solid fa-brands fa-twitter" alt="ícone twitter"></i>
           </a>
         </li>
         {% endif %} {% if SOCIAL.facebook %}
         <li class="list-group-item">
-          <a href="{{SOCIAL.facebook}}" target="_blank" class="icon facebook">
-            {% include "svg/facebook.svg" %} Facebook
+          <a href="{{SOCIAL.facebook}}" target="_blank">
+            <i class="fa-solid fa-brands fa-facebook" alt="ícone facebook"></i>
           </a>
         </li>
         {% endif %} {% if SOCIAL.instagram %}
         <li class="list-group-item">
-          <a href="{{SOCIAL.instagram}}" class="icon instagram" target="_blank">
-            {% include "svg/instagram.svg" %} Instagram
+          <a href="{{SOCIAL.instagram}}" target="_blank">
+            <i class="fa-solid fa-brands fa-instagram" alt="ícone instagram"></i>
           </a>
         </li>
         {% endif %} {% if SOCIAL.linkedin %}
         <li class="list-group-item">
-          <a href="{{SOCIAL.linkedin}}" class="icon linkedin" target="_blank">
-            {% include "svg/linkedin.svg" %} Linkedin
+          <a href="{{SOCIAL.linkedin}}" target="_blank">
+            <i class="fa-solid fa-brands fa-linkedin" alt="ícone linkedin"></i>
           </a>
         </li>
         {% endif %} {% if SOCIAL.youtube %}
         <li class="list-group-item">
-          <a href="{{SOCIAL.youtube}}" class="icon youtube" target="_blank">{% include "svg/youtube.svg" %} Youtube
+          <a href="{{SOCIAL.youtube}}" target="_blank">
+            <i class="fa-solid fa-brands fa-youtube" alt="ícone youtube"></i>
           </a>
         </li>
         {% endif %} {% if SOCIAL.flickr %}
         <li class="list-group-item">
-          <a href="{{SOCIAL.flickr}}" class="icon flickr" target="_blank">{% include "svg/flickr.svg" %} Flickr
+          <a href="{{SOCIAL.flickr}}" target="_blank">
+            <i class="fa-solid fa-brands fa-flickr" alt="ícone flickr"></i>
           </a>
         </li>
         {% endif %} {% if SOCIAL.email %}
         <li class="list-group-item">
-          <a href="{{SOCIAL.email}}" class="icon email" target="_blank">{% include "svg/envelope.svg" %} E-mail
+          <a href="{{SOCIAL.email}}" target="_blank">
+            <i class="fa-solid fa-envelope" alt="ícone email"></i>
           </a>
         </li>
         {% endif %} {% if SOCIAL.telegram %}
         <li class="list-group-item">
-          <a href="{{SOCIAL.telegram}}" class="icon telegram" target="_blank">{% include "svg/telegram.svg" %}
-            Telegram
+          <a href="{{SOCIAL.telegram}}" target="_blank">
+            <i class="fa-solid fa-brands fa-telegram" alt="ícone telegram"></i>
           </a>
         </li>
         {% endif %}
       </ul>
     </div>
-    <div class="col-lg">
-      <h4>Links da APyB</h4>
+    <div class="col-lg-3">
+      <h5>Links da APyB</h5>
       <ul class="list-group list-group-flush">
         <li class="list-group-item">
           <a href="http://python.org.br/"> APyB </a>
@@ -157,6 +111,16 @@
           </a>
         </li>
       </ul>
+    </div>
+    <div class="col-lg-3">
+      <h5>Endereço do evento</h5>
+      <p>
+        <i class="fa-solid fa-location-dot"></i> Centro de Convenções Bolsa do Rio<br/>
+        Edificio Bolsa do Rio<br/>
+        Praça Quinze de Novembro, 20<br/>
+        Centro, Rio de Janeiro - RJ<br/>
+        CEP: 20010-010, Brasil
+      </p>
     </div>
   </div>
 </footer>
