@@ -38,6 +38,7 @@ h2 {
 
 #sobre {
     background-image: url('/theme/images/bg-black.png');
+    background-repeat: repeat;
     color: #fff;
 }
 
@@ -45,9 +46,27 @@ h2 {
     margin-bottom: 0.2rem;
 }
 
+#sobre .logo {
+    width: 20em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+#cidade .row {
+    height: 15em;
+    background-size: cover;
+    background-image: url("/theme/images/rj-picture.png");
+    margin: 0 auto;
+}
+
 #footer {
     background-color: black;
     color: #fff;
+}
+
+#footer ul {
+    block-size: fit-content;
+    width: fit-content;
 }
 
 #footer li {

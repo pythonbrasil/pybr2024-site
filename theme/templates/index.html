@@ -4,14 +4,14 @@
 {% block body%}
 <section id="sobre" class="p-5">
   <div class="row justify-content-md-center">
-    <div class="col-lg-4 col-sm-4 col-md-4">
-      <img src="/theme/images/logo.png" alt="logo do evento python brasil 2024" class="img-fluid logo">
+    <div class="col-lg-4 col-sm-12 col-md-12 text-center">
+      <img src="/theme/images/logo.png" alt="logo do evento python brasil 2024" class="logo">
     </div>
-    <div class="col-lg-4 offset-lg-1">
-        <h1 class="col-lg-12">
+    <div class="col-lg-4 col-sm-12 col-md-6 offset-lg-1">
+        <h1>
             16 A 21 DE OUTUBRO DE 2024
         </h1>
-        <h2 class="col-lg-12">
+        <h2>
             RIO DE JANEIRO - RJ
         </h2>
         <p>
@@ -24,7 +24,7 @@
   </div>
 </section>
 <section id="cidade">
-  <img src="/theme/images/rj-picture.png" alt="pôr do sol na praia de ipanema, no rio de janeiro" class="img-fluid">
+  <div class="row"></div>
 </section>
 <!--<section id="programacao">
 </section>
@@ -69,7 +69,10 @@
             <i class="fa-solid fa-brands fa-linkedin" alt="ícone linkedin"></i>
           </a>
         </li>
-        {% endif %} {% if SOCIAL.youtube %}
+        {% endif %}
+      </ul>
+      <ul class="list-group list-group-flush list-group-horizontal">
+       {% if SOCIAL.youtube %}
         <li class="list-group-item">
           <a href="{{SOCIAL.youtube}}" target="_blank">
             <i class="fa-solid fa-brands fa-youtube" alt="ícone youtube"></i>
