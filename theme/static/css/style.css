@@ -4,20 +4,26 @@
     padding: 0;
 }
 
+section {
+    margin-top: 5em;
+}
+
 body {
-    background-color: #000000;
+    background-color: #000;
     font-family: 'Inter', sans-serif;
     display: block;
 }
 
 h1 {
-    font-size: 2.2em;
+    font-size: 2em;
     font-weight: bold;
     color: #fff;
 }
 
 h2 {
     font-size: 1.5em;
+    color: #fff;
+    font-weight: bold;
 }
 
 .fa-solid {
@@ -43,11 +49,24 @@ h2 {
     border: #F1CF5D;
 }
 
+#patrocinadores .diamante img {
+    width: 20em;
+}
+#patrocinadores .platina img {
+    width: 10em;
+}
+#patrocinadores .ouro img {
+    width: 10em;
+}
+#patrocinadores .prata img {
+    width: 10em;
+}
 
 #sobre {
     background-image: url('/theme/images/bg-black.png');
     background-repeat: repeat;
     color: #fff;
+    margin-top: 0px;
 }
 
 #sobre p {
