@@ -9,21 +9,35 @@ section {
 }
 
 body {
-    background-color: #000;
-    font-family: 'Inter', sans-serif;
+    background: #000;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
     display: block;
+}
+
+#lighter-section {
+    background: url('/theme/images/bg-yellow-textura.png');
+    padding: 2em;
+}
+
+
+#lighter-section p, #lighter-section h2, #lighter-section h1 {
+    color: #12152D;
+}
+
+h1, h2, h3 {
+    font-family: "Merienda", cursive;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 h1 {
     font-size: 2em;
-    font-weight: bold;
-    color: #fff;
 }
 
 h2 {
     font-size: 1.5em;
-    color: #fff;
-    font-weight: bold;
 }
 
 .fa-solid {
@@ -63,10 +77,19 @@ h2 {
 }
 
 #sobre {
-    background-image: url('/theme/images/bg-black.png');
+    background-image: url('/theme/images/bg-blue-textura.png');
     background-repeat: repeat;
     color: #fff;
     margin-top: 0px;
+}
+
+#sobre, #footer {
+    font-family: 'Inter', sans-serif;
+}
+
+#sobre h1, #sobre h2, #sobre h3, #footer h1, #footer h2, #footer h3 {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
 }
 
 #sobre p {
