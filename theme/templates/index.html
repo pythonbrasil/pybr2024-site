@@ -27,7 +27,35 @@
   </div>
 </section>
 <section id="cidade">
-  <div class="row"></div>
+    <div class="praia"></div>
+    <h1 class="pt-5 text-center">SOBRE O EVENTO</h1>
+    <div class="container text-center">
+        <p class="pb-4 text-center fs-3">A Python Brasil é a maior conferência da linguagem de programação Python da América Latina, 
+          um evento feito pela comunidade para a Comunidade.</p>
+        <p class="pb-4 text-center fs-3">Temos orgulho de ter um ambiente seguro, amistoso, inclusivo e acessível, onde todas as pessoas são bem-vindas e possam 
+          se sentir à vontade, aproveitando o melhor que o evento tem a oferecer.</p>
+</section>
+
+<section id="local_evento">
+  <h1 class="pt-5 text-center">O LOCAL DO EVENTO</h1>
+  <div class="container text-center">
+      <p class="pb-4 text-center fs-3">As palestras acontecerão no Centro de Convenções Bolsa de Valores, 
+        na Praça XV, um local central no Rio de Janeiro, em um auditório com capacidade para até 1000 pessoas.</p>
+      <div class="row">
+        <div class="col-sm-12 col-md-4 mb-3">
+          <img src=".\theme\images\frente_local.jpg" class="rounded img-fluid" style="max-width: 100%; height: auto;" alt="">
+        </div>
+        <div class="col-sm-12 col-md-4 mb-3">
+          <img src=".\theme\images\local_evento.jpg" class="rounded img-fluid" style="max-width: 100%; height: auto;" alt="">
+        </div>
+        <div class="col-sm-12 col-md-4 mb-3">
+          <img src=".\theme\images\local_evento_dois.jpg" class="rounded img-fluid" style="max-width: 100%; height: auto;" alt="">
+        </div>
+      </div>
+    </div>
+  <div class="container pt-5">
+    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1DzHnt_l2jHAyctgrlerlSgvEFDPNfvc&ehbc=2E312F&noprof=1" width="100%" height="500"></iframe>
+  </div>
 </section>
 <!--<section id="programacao">
 </section>
@@ -39,95 +67,97 @@
 </section>
 <section id="FAQ">
 </section> -->
-<footer id="footer">
-  <div class="row p-5">
-    <div class="col-lg-6">
-      <img src="/theme/images/logo.png" alt="logo do evento python brasil 2024" class="logo">
-      <p>
-        Python Brasil é uma conferência sem fins lucrativos dirigida por voluntários para promover a linguagem de programação Python de código aberto.
-        A conferência é apoiado pela Associação Python Brasil (APyB).
-      </p>
-      <ul class="list-group list-group-flush list-group-horizontal">
-        {% if SOCIAL.twitter %}
-        <li class="list-group-item">
-          <a href="{{SOCIAL.twitter}}" target="_blank">
-            <i class="fa-solid fa-brands fa-twitter" alt="ícone twitter"></i>
-          </a>
-        </li>
-        {% endif %} {% if SOCIAL.facebook %}
-        <li class="list-group-item">
-          <a href="{{SOCIAL.facebook}}" target="_blank">
-            <i class="fa-solid fa-brands fa-facebook" alt="ícone facebook"></i>
-          </a>
-        </li>
-        {% endif %} {% if SOCIAL.instagram %}
-        <li class="list-group-item">
-          <a href="{{SOCIAL.instagram}}" target="_blank">
-            <i class="fa-solid fa-brands fa-instagram" alt="ícone instagram"></i>
-          </a>
-        </li>
-        {% endif %} {% if SOCIAL.linkedin %}
-        <li class="list-group-item">
-          <a href="{{SOCIAL.linkedin}}" target="_blank">
-            <i class="fa-solid fa-brands fa-linkedin" alt="ícone linkedin"></i>
-          </a>
-        </li>
-        {% endif %}
-      </ul>
-      <ul class="list-group list-group-flush list-group-horizontal">
-       {% if SOCIAL.youtube %}
-        <li class="list-group-item">
-          <a href="{{SOCIAL.youtube}}" target="_blank">
-            <i class="fa-solid fa-brands fa-youtube" alt="ícone youtube"></i>
-          </a>
-        </li>
-        {% endif %} {% if SOCIAL.flickr %}
-        <li class="list-group-item">
-          <a href="{{SOCIAL.flickr}}" target="_blank">
-            <i class="fa-solid fa-brands fa-flickr" alt="ícone flickr"></i>
-          </a>
-        </li>
-        {% endif %} {% if SOCIAL.email %}
-        <li class="list-group-item">
-          <a href="{{SOCIAL.email}}" target="_blank">
-            <i class="fa-solid fa-envelope" alt="ícone email"></i>
-          </a>
-        </li>
-        {% endif %} {% if SOCIAL.telegram %}
-        <li class="list-group-item">
-          <a href="{{SOCIAL.telegram}}" target="_blank">
-            <i class="fa-solid fa-brands fa-telegram" alt="ícone telegram"></i>
-          </a>
-        </li>
-        {% endif %}
-      </ul>
-    </div>
-    <div class="col-lg-3">
-      <h5>Links da APyB</h5>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-          <a href="http://python.org.br/"> APyB </a>
-        </li>
-        <li class="list-group-item">
-          <a href="http://python.org.br/cdc/"> Código de conduta </a>
-        </li>
-        <li class="list-group-item">
-          <a href="http://python.org.br/premio-dorneles-tremea-jean-ferri">
-            Dorneles Tremea/Jean Ferri
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="col-lg-3">
-      <h5>Endereço do evento</h5>
-      <p>
-        <i class="fa-solid fa-location-dot"></i> Centro de Convenções Bolsa do Rio<br/>
-        Edificio Bolsa do Rio<br/>
-        Praça Quinze de Novembro, 20<br/>
-        Centro, Rio de Janeiro - RJ<br/>
-        CEP: 20010-010, Brasil
-      </p>
-    </div>
+<footer>
+  <div class="container">
+    <div class="footer_body">
+      <div class="footer_social_logo">
+        <img class="footerImg" src="/theme/images/logo.png" alt="logo do evento python brasil 2024" class="logo">
+        <div class="pt-3">
+          <p>
+            Python Brasil é uma conferência sem fins lucrativos dirigida por voluntários para promover a linguagem de programação Python de código aberto.
+            A conferência é apoiado pela Associação Python Brasil (APyB).
+          </p>
+        </div>
+        <ul class="platforms_socials">
+          {% if SOCIAL.twitter %}
+          <li class="list-group-item">
+            <a href="{{SOCIAL.twitter}}" target="_blank">
+              <i class="fa-solid fa-brands fa-twitter" alt="ícone twitter"></i>
+            </a>
+          </li>
+          {% endif %} {% if SOCIAL.facebook %}
+          <li class="list-group-item">
+            <a href="{{SOCIAL.facebook}}" target="_blank">
+              <i class="fa-solid fa-brands fa-facebook" alt="ícone facebook"></i>
+            </a>
+          </li>
+          {% endif %} {% if SOCIAL.instagram %}
+          <li class="list-group-item">
+            <a href="{{SOCIAL.instagram}}" target="_blank">
+              <i class="fa-solid fa-brands fa-instagram" alt="ícone instagram"></i>
+            </a>
+          </li>
+          {% endif %} {% if SOCIAL.linkedin %}
+          <li class="list-group-item">
+            <a href="{{SOCIAL.linkedin}}" target="_blank">
+              <i class="fa-solid fa-brands fa-linkedin" alt="ícone linkedin"></i>
+            </a>
+          </li>
+          {% endif %} {% if SOCIAL.youtube %}
+          <li class="list-group-item">
+            <a href="{{SOCIAL.youtube}}" target="_blank">
+              <i class="fa-solid fa-brands fa-youtube" alt="ícone youtube"></i>
+            </a>
+          </li>
+          {% endif %} {% if SOCIAL.flickr %}
+          <li class="list-group-item">
+            <a href="{{SOCIAL.flickr}}" target="_blank">
+              <i class="fa-solid fa-brands fa-flickr" alt="ícone flickr"></i>
+            </a>
+          </li>
+          {% endif %} {% if SOCIAL.email %}
+          <li class="list-group-item">
+            <a href="{{SOCIAL.email}}" target="_blank">
+              <i class="fa-solid fa-envelope" alt="ícone email"></i>
+            </a>
+          </li>
+          {% endif %} {% if SOCIAL.telegram %}
+          <li class="list-group-item">
+            <a href="{{SOCIAL.telegram}}" target="_blank">
+              <i class="fa-solid fa-brands fa-telegram" alt="ícone telegram"></i>
+            </a>
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+      
+      <div class="links_apyb">
+        <h5>Links da APyB</h5>
+        <ul class="lista_link">
+          <li>
+            <a href="http://python.org.br/" class="text-decoration-none">APyB</a>
+          </li>
+          <li>
+            <a href="http://python.org.br/cdc/" class="text-decoration-none"> Código de conduta </a>
+          </li>
+          <li>
+            <a href="http://python.org.br/premio-dorneles-tremea-jean-ferri" class="text-decoration-none">
+              Dorneles Tremea/Jean Ferri
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3">
+        <h5 class="text-light pb-4">Endereço do evento</h5>
+        <p>
+          <i class="fa-solid fa-location-dot"></i> Centro de Convenções Bolsa do Rio<br/>
+          Edificio Bolsa do Rio<br/>
+          Praça Quinze de Novembro, 20<br/>
+          Centro, Rio de Janeiro - RJ<br/>
+          CEP: 20010-010, Brasil
+        </p>
+      </div>
   </div>
 </footer>
 {% endblock %}
