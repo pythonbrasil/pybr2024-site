@@ -4,12 +4,19 @@
     padding: 0;
 }
 
+html {}
+
 section {
     margin-top: 5em;
 }
 
 body {
-    background: #000;
+    background-image: url('/theme/images/bg-blue-textura.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     display: block;
@@ -21,11 +28,15 @@ body {
 }
 
 
-#lighter-section p, #lighter-section h2, #lighter-section h1 {
+#lighter-section p,
+#lighter-section h2,
+#lighter-section h1 {
     color: #12152D;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: "Merienda", cursive;
     font-weight: 800;
     color: #fff;
@@ -42,14 +53,14 @@ h2 {
 
 .fa-solid {
     color: #EEBF23;
-    filter:drop-shadow(#EC452F 1px 1px);
+    filter: drop-shadow(#EC452F 1px 1px);
     margin-right: 0.3rem;
 }
 
 
 .btn {
     text-transform: lowercase;
-} 
+}
 
 .btn.btn-primary {
     margin: 0.5rem;
@@ -57,7 +68,9 @@ h2 {
     border: #cd3724;
 }
 
-.btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:visited{
+.btn.btn-primary:hover,
+.btn.btn-primary:active,
+.btn.btn-primary:visited {
     margin: 0.5rem;
     background-color: #d13c28;
     border: #F1CF5D;
@@ -66,28 +79,35 @@ h2 {
 #patrocinadores .diamante img {
     width: 20em;
 }
+
 #patrocinadores .platina img {
     width: 10em;
 }
+
 #patrocinadores .ouro img {
     width: 10em;
 }
+
 #patrocinadores .prata img {
     width: 10em;
 }
 
 #sobre {
-    background-image: url('/theme/images/bg-blue-textura.png');
-    background-repeat: repeat;
     color: #fff;
     margin-top: 0px;
 }
 
-#sobre, #footer {
+#sobre,
+#footer {
     font-family: 'Inter', sans-serif;
 }
 
-#sobre h1, #sobre h2, #sobre h3, #footer h1, #footer h2, #footer h3 {
+#sobre h1,
+#sobre h2,
+#sobre h3,
+#footer h1,
+#footer h2,
+#footer h3 {
     font-family: 'Inter', sans-serif;
     text-transform: uppercase;
 }
@@ -112,6 +132,7 @@ h2 {
 .container {
     margin-left: auto;
     margin-right: auto;
+    padding-top: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
     width: 100%;
@@ -119,6 +140,7 @@ h2 {
 
 
 footer {
+    margin-top: 40px;
     background-color: black;
 }
 
@@ -182,16 +204,36 @@ footer .container .lista_link a {
 
 @media (max-width: 768px) {
     footer .footer_body {
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
-  
+
     footer .links_apyb {
-      text-align: center;
-      margin-top: 30px;
+        text-align: center;
+        margin-top: 30px;
     }
-  
+
     footer .links_apyb h5 {
-      margin-bottom: 15px;
+        margin-bottom: 15px;
     }
-  }
+}
+
+.sticky {
+    --bs-gutter-x: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: #12152D;
+    transition: all 0.5s;
+}
+
+.sticky+.content {
+    padding-top: 102px;
+}
+
+.scroll-to {
+    padding-top: 2em;
+}
