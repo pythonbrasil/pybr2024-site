@@ -1,6 +1,4 @@
 {% extends "theme/base.html" %}
-{% set home = (articles|get_by_slug("sobre")) %}
-
 {% block body%}
 <section id="sobre" class="p-5">
   <div class="row justify-content-md-center">
@@ -8,15 +6,15 @@
       <img src="/theme/images/logo.png" alt="logo do evento python brasil 2024" class="logo">
     </div>
     <div class="pt-5 col-lg-4 col-sm-12 col-md-6 offset-lg-1 text-center">
-        <h1>
-            16 A 21 DE OUTUBRO DE 2024
-        </h1>
-        <h2>
-            RIO DE JANEIRO - RJ
-        </h2>
-      </div>
+      <h1>
+        16 A 21 DE OUTUBRO DE 2024
+      </h1>
+      <h2>
+        RIO DE JANEIRO - RJ
+      </h2>
+    </div>
   </div>
-  <div class="row justify-content-md-center">
+  <nav id="navbar" class="row justify-content-md-center">
     <div class="col-lg-10 col-sm-12 col-md-12 text-center">
       <a href="#evento" class="btn btn-primary">
         o evento
@@ -27,40 +25,46 @@
       <a href="#patrocinadores" class="btn btn-primary">
         patrocinadores
       </a>
-    </div>
+  </nav>
 </section>
 <div id="lighter-section">
-<section id="evento">
-    <h1 class="text-center">SOBRE O EVENTO</h1>
+  <section id="evento">
+    <h1 class="text-center scroll-to">SOBRE O EVENTO</h1>
     <div class="container text-center">
-        <p class="pb-4 text-center fs-3">A Python Brasil é a maior conferência da linguagem de programação Python da América Latina, 
-          um evento feito pela comunidade para a Comunidade.</p>
-        <p class="pb-4 text-center fs-3">Temos orgulho de ter um ambiente seguro, amistoso, inclusivo e acessível, onde todas as pessoas são bem-vindas e possam 
-          se sentir à vontade, aproveitando o melhor que o evento tem a oferecer.</p>
-</section>
-<section id="local">
-  <h1 class="text-center">O LOCAL DO EVENTO</h1>
-  <div class="container text-center">
-      <p class="pb-4 text-center fs-3">As palestras acontecerão no Centro de Convenções Bolsa de Valores, 
+      <p class="pb-4 text-center fs-3">A Python Brasil é a maior conferência da linguagem de programação Python da
+        América Latina,
+        um evento feito pela comunidade para a Comunidade.</p>
+      <p class="pb-4 text-center fs-3">Temos orgulho de ter um ambiente seguro, amistoso, inclusivo e acessível, onde
+        todas as pessoas são bem-vindas e possam
+        se sentir à vontade, aproveitando o melhor que o evento tem a oferecer.</p>
+  </section>
+  <section id="local">
+    <h1 class="text-center scroll-to">O LOCAL DO EVENTO</h1>
+    <div class="container text-center">
+      <p class="pb-4 text-center fs-3">As palestras acontecerão no Centro de Convenções Bolsa de Valores,
         na Praça XV, um local central no Rio de Janeiro, em um auditório com capacidade para até 1000 pessoas.</p>
       <div class="row">
         <div class="col-sm-12 col-md-4 mb-3">
-          <img src=".\theme\images\frente_local.jpg" class="rounded img-fluid" style="max-width: 100%; height: auto;" alt="">
+          <img src=".\theme\images\frente_local.jpg" class="rounded img-fluid" style="max-width: 100%; height: auto;"
+            alt="">
         </div>
         <div class="col-sm-12 col-md-4 mb-3">
-          <img src=".\theme\images\local_evento.jpg" class="rounded img-fluid" style="max-width: 100%; height: auto;" alt="">
+          <img src=".\theme\images\local_evento.jpg" class="rounded img-fluid" style="max-width: 100%; height: auto;"
+            alt="">
         </div>
         <div class="col-sm-12 col-md-4 mb-3">
-          <img src=".\theme\images\local_evento_dois.jpg" class="rounded img-fluid" style="max-width: 100%; height: auto;" alt="">
+          <img src=".\theme\images\local_evento_dois.jpg" class="rounded img-fluid"
+            style="max-width: 100%; height: auto;" alt="">
         </div>
       </div>
     </div>
-  <div class="container pt-5">
-    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1DzHnt_l2jHAyctgrlerlSgvEFDPNfvc&ehbc=2E312F&noprof=1" width="100%" height="500"></iframe>
-  </div>
-</section>
+    <div class="container pt-5">
+      <iframe style="pointer-events:none;" src="https://www.google.com/maps/d/u/0/embed?mid=1DzHnt_l2jHAyctgrlerlSgvEFDPNfvc&ehbc=2E312F&noprof=1"
+        width="100%" height="500"></iframe>
+    </div>
+  </section>
 
-<!--<section id="programacao">
+  <!--<section id="programacao">
 </section>
 <section id="keynotes">
 </section>
@@ -72,32 +76,32 @@
 
 <section id="patrocinadores">
   <div class="container text-center">
-      <h1>PATROCINADORES</h1>
-      <a href="theme/media_kits/proposta-de-patrocinio-pybr-2024.pdf" target="_blank" class="btn btn-primary">
-        proposta de patrocínio [pt]
-      </a>
-      <a href="theme/media_kits/sponsorship-proposal-pybr-2024.pdf" target="_blank" class="btn btn-primary">
-        sponsorship proposal [en]
-      </a>
-      <section class="diamante">
+    <h1 class="scroll-to">PATROCINADORES</h1>
+    <a href="theme/media_kits/proposta-de-patrocinio-pybr-2024.pdf" target="_blank" class="btn btn-primary">
+      proposta de patrocínio [pt]
+    </a>
+    <a href="theme/media_kits/sponsorship-proposal-pybr-2024.pdf" target="_blank" class="btn btn-primary">
+      sponsorship proposal [en]
+    </a>
+    <section class="diamante">
       <h2>diamante</h2>
       <img src="theme/images/patrocinador-placeholder.png" alt="sua empresa aqui (diamante)">
-      </section>
-      <section class="platina">
+    </section>
+    <section class="platina">
       <h2>platina</h2>
       <img src="theme/images/patrocinador-placeholder.png" alt="sua empresa aqui (platina)">
       <img src="theme/images/patrocinador-placeholder.png" alt="sua empresa aqui (platina)">
-      </section>
-      <section class="ouro">
+    </section>
+    <section class="ouro">
       <h2>ouro</h2>
       <img src="theme/images/patrocinador-placeholder.png" alt="sua empresa aqui (ouro)">
       <img src="theme/images/patrocinador-placeholder.png" alt="sua empresa aqui (ouro)">
-      </section>
-      <section class="prata">
+    </section>
+    <section class="prata">
       <h2>prata</h2>
       <img src="theme/images/patrocinador-placeholder.png" alt="sua empresa aqui (prata)">
       <img src="theme/images/patrocinador-placeholder.png" alt="sua empresa aqui (prata)">
-      </section>
+    </section>
   </div>
 </section>
 <footer>
@@ -107,7 +111,8 @@
         <img class="footerImg" src="/theme/images/logo.png" alt="logo do evento python brasil 2024" class="logo">
         <div class="pt-3">
           <p>
-            Python Brasil é uma conferência sem fins lucrativos dirigida por voluntários para promover a linguagem de programação Python de código aberto.
+            Python Brasil é uma conferência sem fins lucrativos dirigida por voluntários para promover a linguagem de
+            programação Python de código aberto.
             A conferência é apoiado pela Associação Python Brasil (APyB).
           </p>
         </div>
@@ -163,7 +168,7 @@
           {% endif %}
         </ul>
       </div>
-      
+
       <div class="links_apyb">
         <h5>Links da APyB</h5>
         <ul class="lista_link">
@@ -184,13 +189,13 @@
       <div class="col-lg-3">
         <h5 class="text-light pb-4">Endereço do evento</h5>
         <p>
-          <i class="fa-solid fa-location-dot"></i> Centro de Convenções Bolsa do Rio<br/>
-          Edificio Bolsa do Rio<br/>
-          Praça Quinze de Novembro, 20<br/>
-          Centro, Rio de Janeiro - RJ<br/>
+          <i class="fa-solid fa-location-dot"></i> Centro de Convenções Bolsa do Rio<br />
+          Edificio Bolsa do Rio<br />
+          Praça Quinze de Novembro, 20<br />
+          Centro, Rio de Janeiro - RJ<br />
           CEP: 20010-010, Brasil
         </p>
       </div>
-  </div>
+    </div>
 </footer>
 {% endblock %}
