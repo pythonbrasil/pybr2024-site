@@ -24,7 +24,8 @@ body {
 
 #lighter-section {
     background: url('/theme/images/bg-yellow-textura.png');
-    padding: 2em;
+    padding: 1m;
+    padding-top: 0.1em;
 }
 
 
@@ -37,8 +38,8 @@ body {
 h1,
 h2,
 h3 {
-    font-family: "Merienda", cursive;
-    font-weight: 800;
+    font-family: "Inter", sans-serif;
+    font-weight: bolder;
     color: #fff;
     text-transform: uppercase;
 }
@@ -236,4 +237,8 @@ footer .container .lista_link a {
 
 .scroll-to {
     padding-top: 2em;
+}
+
+#evento {
+    padding: 0em;
 }
