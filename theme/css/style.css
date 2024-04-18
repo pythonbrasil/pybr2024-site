@@ -1,11 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {}
+
+section {
+    margin-top: 5em;
+}
+
 body {
-    background-color: #F1CF5D;
-    font-family: 'Inter', sans-serif;
+    background-image: url('/theme/images/bg-blue-textura.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    display: block;
+}
+
+#lighter-section {
+    background: url('/theme/images/bg-yellow-textura.png');
+    padding: 1m;
+    padding-top: 0.1em;
+}
+
+
+#lighter-section p,
+#lighter-section h2,
+#lighter-section h1 {
+    color: #12152D;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Inter", sans-serif;
+    font-weight: bolder;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 h1 {
-    font-size: 2.2em;
-    font-weight: bold;
+    font-size: 2em;
 }
 
 h2 {
@@ -14,14 +54,14 @@ h2 {
 
 .fa-solid {
     color: #EEBF23;
-    filter:drop-shadow(#EC452F 1px 1px);
+    filter: drop-shadow(#EC452F 1px 1px);
     margin-right: 0.3rem;
 }
 
 
 .btn {
     text-transform: lowercase;
-} 
+}
 
 .btn.btn-primary {
     margin: 0.5rem;
@@ -29,17 +69,48 @@ h2 {
     border: #cd3724;
 }
 
-.btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:visited{
+.btn.btn-primary:hover,
+.btn.btn-primary:active,
+.btn.btn-primary:visited {
     margin: 0.5rem;
     background-color: #d13c28;
     border: #F1CF5D;
 }
 
+#patrocinadores .diamante img {
+    width: 20em;
+}
+
+#patrocinadores .platina img {
+    width: 10em;
+}
+
+#patrocinadores .ouro img {
+    width: 10em;
+}
+
+#patrocinadores .prata img {
+    width: 10em;
+}
 
 #sobre {
-    background-image: url('/theme/images/bg-black.png');
-    background-repeat: repeat;
     color: #fff;
+    margin-top: 0px;
+}
+
+#sobre,
+#footer {
+    font-family: 'Inter', sans-serif;
+}
+
+#sobre h1,
+#sobre h2,
+#sobre h3,
+#footer h1,
+#footer h2,
+#footer h3 {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
 }
 
 #sobre p {
@@ -52,41 +123,122 @@ h2 {
     margin-bottom: 2em;
 }
 
-#cidade .row {
-    height: 15em;
+#cidade .praia {
+    height: 30rem;
     background-size: cover;
     background-image: url("/theme/images/rj-picture.png");
     margin: 0 auto;
 }
 
-#footer {
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+}
+
+
+footer {
+    margin-top: 40px;
     background-color: black;
-    color: #fff;
 }
 
-#footer ul {
-    block-size: fit-content;
-    width: fit-content;
+p {
+    color: white;
 }
 
-#footer li {
+footer .footer_body {
+    display: flex;
+    gap: 40px;
+    justify-content: space-around;
+    padding: 70px 20px;
+}
+
+footer .footer_body footer_social_logo {
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 500px;
+}
+
+footer .footer1_body .footer_social_logo img {
+    max-width: 200px;
+    padding-bottom: 20px;
+}
+
+footer .footer_social_logo img.footerImg {
+    max-width: 200px
+}
+
+footer .platforms_socials {
+    display: flex;
+    gap: 24px;
+    justify-content: flex-start;
+    padding-left: 0px;
+}
+
+footer .container .links_apyb h5 {
+    color: white;
+}
+
+footer .container .lista_link {
     list-style-type: none;
-    background-color: black;
-    border: 0;
+    padding-left: 0;
+    padding-top: 20px;
 }
 
-#footer .logo {
-    width: 10em;
-    margin-bottom: 1em;
-    padding-left: 16px;
+footer .container .lista_link li {
+    padding-top: 15px;
 }
 
-#footer p {
-    font-size: smaller;
-    padding-left: 16px;
-    margin-top: 0.5em;
+footer .container .lista_link li a {
+    border: 10px;
 }
 
-#footer a, #footer a:hover, #footer a:active, #footer a:visited{
-    color: #fff;
+footer .container .lista_link a {
+    color: white;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    footer .footer_body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .links_apyb {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    footer .links_apyb h5 {
+        margin-bottom: 15px;
+    }
+}
+
+.sticky {
+    --bs-gutter-x: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: #12152D;
+    transition: all 0.5s;
+}
+
+.sticky+.content {
+    padding-top: 102px;
+}
+
+.scroll-to {
+    padding-top: 2em;
+}
+
+#evento {
+    padding: 0em;
 }
