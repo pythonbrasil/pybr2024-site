@@ -6,6 +6,7 @@
 
 @font-face {
     font-family: "Shinkoya";
+    src: url("/theme/fonts/shinoya.otf");
     src: url("/theme/fonts/shinoya.otf") format("opentype");
     src: url("/theme/fonts/shinoya.ttf") format("truetype");
 }
@@ -43,7 +44,7 @@ body {
 h1,
 h2,
 h3 {
-    font-family: 'Shinkoya', sans-serif;
+    font-family: 'Shinkoya', 'Handlee', sans-serif;
     font-weight: bolder;
     color: #fff;
     margin-top: 0;
@@ -74,6 +75,7 @@ h2 {
     text-align: right;
     background-position: right; 
     background-repeat: no-repeat;
+    min-width: 10em;
     font-family: 'Inter', sans-serif;
 
 }
@@ -315,19 +317,21 @@ body, #hero, #top, #wave {
 #actions {
     margin-top: 0;
     margin-bottom: 0;
-    font-family: 'Shinkoya', sans-serif;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-family: 'Shinkoya', 'Handlee', sans-serif;
 }
 
-#actions div, div.left, div.right {
+#actions div, #actions div div {
     height: max-content;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     margin-bottom: 0;
+    padding-left: 0.3em;
 }
 
 #actions div div.left {
     background: #F8A123;
-    margin-left: 10px;
     border-radius: 0.5em;
     height: max-content;
 }
@@ -335,7 +339,6 @@ body, #hero, #top, #wave {
 
 #actions div div.right {
     background: #F14529;
-    margin-right: 10px;
     border-radius: 0.5em;
     color: #fff;
     height: max-content;
@@ -371,7 +374,7 @@ body, #hero, #top, #wave {
 
 #nav {
     padding-bottom: 2em;
-    font-family: 'Shinkoya', sans-serif;
+    font-family: 'Shinkoya', 'Handlee', sans-serif;
     font-size: 1.7rem;
     color: white;
 }
