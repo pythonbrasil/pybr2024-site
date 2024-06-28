@@ -1,4 +1,13 @@
+:root {
+  --primary-paragraph-color: #12152d;
+  --accent-primary-color: #f8a123;
+}
+
+/* CSS Reset */
 * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -26,7 +35,6 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   display: block;
-  color: white;
 }
 
 #lighter-section {
@@ -135,11 +143,18 @@ h2 {
   color: #fff;
 }
 
-#sobre {
+#sobre,
+#footer {
   font-family: "Inter", sans-serif;
 }
 
-#sobre:is(h1, h2, h3) {
+#sobre h1,
+#sobre h2,
+#sobre h3,
+#footer h1,
+#footer h2,
+#footer h3 {
+  font-family: "Inter", sans-serif;
   text-transform: uppercase;
 }
 
@@ -148,6 +163,9 @@ h2 {
 #patrocinio a:active,
 #patrocinio a:hover {
   color: white;
+}
+#patrocinio h1 {
+  margin-top: 2em;
 }
 
 #sobre p {
@@ -176,79 +194,83 @@ h2 {
   width: 100%;
 }
 
-.footer {
-  --padding: 16px;
-  --min-width: calc(320px - (var(--padding) * 2));
-  --column-max: auto-fit;
-  display: grid;
-  grid-template-columns: repeat(
-    var(--column-max),
-    minmax(var(--min-width), 1fr)
-  );
-  gap: 2rem;
+footer {
   margin-top: 40px;
-  margin-inline: auto;
-  padding: 70px var(--padding);
   background-color: #02050e;
-  @media (min-width: 1255px) {
-    --column-max: 3;
-    --padding: 70px;
-  }
 }
 
-.footer__social {
-  display: grid;
-  gap: 1rem;
-  @media (max-width: 440px) {
-    justify-items: center;
-  }
+p {
+  color: white;
 }
 
-.footer__social-list {
+footer .footer_body {
   display: flex;
-  flex-wrap: wrap;
-  gap: 24px var(--gap, 24px);
+  gap: 40px;
+  justify-content: space-around;
+  padding: 70px 20px;
+}
+
+footer .footer_body footer_social_logo {
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 500px;
+}
+
+footer .footer1_body .footer_social_logo img {
+  max-width: 200px;
+  padding-bottom: 20px;
+}
+
+footer .footer_social_logo img.footerImg {
+  max-width: 200px;
+}
+
+footer .platforms_socials {
+  display: flex;
+  gap: 24px;
+  justify-content: flex-start;
   padding-left: 0px;
-  @media (max-width: 626px) {
-    --gap: 32px;
-    justify-content: center;
+}
+
+footer .container .links_apyb h5 {
+  color: white;
+}
+
+footer .container .lista_link {
+  list-style-type: none;
+  padding-left: 0;
+  padding-top: 20px;
+}
+
+footer .container .lista_link li {
+  padding-top: 15px;
+}
+
+footer .container .lista_link li a {
+  border: 10px;
+}
+
+footer .container .lista_link a {
+  color: white;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  footer .footer_body {
+    flex-direction: column;
+    align-items: center;
   }
-}
 
-.footer__address {
-  display: grid;
-  grid-auto-rows: max-content;
-  gap: 0.5rem;
-}
-
-.footer__address address {
-  display: grid;
-}
-
-.footer__sitemap-list {
-  display: grid;
-  gap: 0.5rem;
-}
-
-.footer__links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-  margin: 0;
-  @media (max-width: 568px) {
-    justify-content: space-between;
+  footer .links_apyb {
+    text-align: center;
+    margin-top: 30px;
   }
-}
 
-.footer__desc {
-  text-align: center;
-}
-
-.full-bled {
-  grid-column: 1 / -1;
+  footer .links_apyb h5 {
+    margin-bottom: 15px;
+  }
 }
 
 .sticky {
@@ -321,7 +343,6 @@ body,
   background: #f8a123;
   border-radius: 0.5em;
   height: max-content;
-  color: #000;
 }
 
 #actions div div.right {
@@ -335,8 +356,8 @@ body,
   margin-top: 0;
 }
 
-#patrocinio hr {
-  margin-top: 5em;
+#patrocinio section {
+  margin-top: 2em;
 }
 
 #patrocinio {
@@ -357,27 +378,16 @@ body,
   border: #121b31;
 }
 
-.navigation {
-  width: fit-content;
-  display: flex;
-  gap: 2rem;
+#nav {
   padding-bottom: 2em;
-  margin-inline: auto;
-  margin-block-start: 1rem;
   font-family: "Shinkoya", sans-serif;
   font-size: 1.7rem;
-  @media (max-width: 450px) {
-    flex-direction: column;
-  }
+  color: white;
 }
 
-.navigation a {
-  text-align: center;
-}
-
-.img-section-title {
-  max-height: 40px;
-  max-width: 100%;
-  margin-bottom: 2em;
-  object-fit: contain;
+#nav a,
+#nav a:visited,
+#nav a:active,
+#nav a:hover {
+  color: white;
 }
