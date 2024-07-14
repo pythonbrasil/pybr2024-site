@@ -338,8 +338,8 @@ body, #hero, #top, #wave {
     margin-top: 0;
 }
 
-#patrocinio section {
-    margin-top: 2em;
+#patrocinio hr {
+    margin-top: 5em;
 }
 
 #patrocinio {
