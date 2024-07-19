@@ -241,6 +241,18 @@ footer .container .lista_link a {
     white-space: nowrap;
 }
 
+@media (max-width: 425px) {
+    #local .img-section-title {
+      max-height: 39px;
+      max-width: 180px;
+    }
+  
+    #patrocinio .img-section-title {
+      max-height: 39px;
+      max-width: 280px;
+    }
+  }
+
 @media (max-width: 768px) {
     footer .footer_body {
         flex-direction: column;
