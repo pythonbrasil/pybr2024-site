@@ -8,6 +8,10 @@ section {
     margin-top: 0px;
 }
 
+a {
+    color: inherit;
+}
+
 body {
     background-repeat: repeat;
     background-attachment: fixed;
@@ -361,18 +365,26 @@ body, #hero, #top, #wave {
     border: #121B31;
 }
 
-
-#nav {
+.navigation {
+    width: fit-content;
+    display: flex;
+    gap: 2rem;
     padding-bottom: 2em;
+    margin-inline: auto;
+    margin-block-start: 1rem;
     font-family: 'Shinkoya', sans-serif;
     font-size: 1.7rem;
     color: white;
+    @media (max-width: 450px) {
+        flex-direction: column;
+    }
 }
 
-#nav a,
-#nav a:visited,
-#nav a:active,
-#nav a:hover {
+.navigation a {
+    text-align: center;
+}
+
+.navigation a:is(:visited, :active, :hover){
     color: white;
 }
 
