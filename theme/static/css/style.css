@@ -389,8 +389,10 @@ body, #hero, #top, #wave {
 }
 
 .img-section-title {
-    max-height: 39px;
+    max-height: 40px;
+    max-width: 100%;
     margin-bottom: 2em;
+    object-fit: contain;
 }
 
 hr {
