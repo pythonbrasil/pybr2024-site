@@ -321,6 +321,7 @@ body,
   background: #f8a123;
   border-radius: 0.5em;
   height: max-content;
+  color: #000;
 }
 
 #actions div div.right {
