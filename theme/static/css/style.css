@@ -1,6 +1,14 @@
 :root {
   --primary-paragraph-color: #12152d;
   --accent-primary-color: #f8a123;
+  --accent-secondary-color: #f14529;
+  --background-color: #121b31;
+  --background-color-light: #233662;
+  --background-color-dark: #02050e;
+  --text-color: #fff;
+  --text-color-light: #f8f8f8;
+  --text-color-dark: #12152d;
+  --text-color-accent: #f8a123;
 }
 
 /* CSS Reset */
@@ -38,8 +46,8 @@ body {
 }
 
 #lighter-section {
-  background-color: #f8a123;
-  padding: 1m;
+  background-color: var(--accent-primary-color);
+  padding: 1rem;
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.75rem;
@@ -164,7 +172,7 @@ h2 {
 #patrocinio a:hover {
   color: white;
 }
-#patrocinio h1 {
+#patrocinio h2 {
   margin-top: 2em;
 }
 
@@ -203,73 +211,36 @@ p {
   color: white;
 }
 
-footer .footer_body {
+.footer {
   display: flex;
-  gap: 40px;
-  justify-content: space-around;
-  padding: 70px 20px;
+  flex-direction: row;
+  gap: 1rem;
+  outline: 1px solid pink;
 }
 
-footer .footer_body footer_social_logo {
-  display: flex;
-  flex: 1 1;
-  flex-direction: column;
-  gap: 16px;
-  max-width: 500px;
+.footer__social {
+  outline: 1px red solid;
 }
 
-footer .footer1_body .footer_social_logo img {
-  max-width: 200px;
-  padding-bottom: 20px;
+.footer__social-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
-footer .footer_social_logo img.footerImg {
-  max-width: 200px;
+.footer__logo {
+  padding-bottom: 0.5rem;
 }
-
-footer .platforms_socials {
-  display: flex;
-  gap: 24px;
-  justify-content: flex-start;
-  padding-left: 0px;
-}
-
-footer .container .links_apyb h5 {
-  color: white;
-}
-
-footer .container .lista_link {
-  list-style-type: none;
-  padding-left: 0;
-  padding-top: 20px;
-}
-
-footer .container .lista_link li {
-  padding-top: 15px;
-}
-
-footer .container .lista_link li a {
-  border: 10px;
-}
-
-footer .container .lista_link a {
-  color: white;
-  white-space: nowrap;
+.footer__desc {
+  font-size: smaller;
+  text-align: start;
 }
 
 @media (max-width: 768px) {
-  footer .footer_body {
+  .footer {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-
-  footer .links_apyb {
-    text-align: center;
-    margin-top: 30px;
-  }
-
-  footer .links_apyb h5 {
-    margin-bottom: 15px;
+    gap: 1rem;
+    padding: 1rem;
   }
 }
 
@@ -281,7 +252,7 @@ footer .container .lista_link a {
   right: 0;
   width: 100vw;
   box-sizing: border-box;
-  background-color: #12152d;
+  background-color: var(--primary-paragraph-color);
   transition: all 0.5s;
 }
 
@@ -340,15 +311,15 @@ body,
 }
 
 #actions div div.left {
-  background: #f8a123;
+  background: var(--accent-primary-color);
   border-radius: 0.5em;
   height: max-content;
 }
 
 #actions div div.right {
-  background: #f14529;
+  background: var(--accent-secondary-color);
   border-radius: 0.5em;
-  color: #fff;
+  color: var(--text-color);
   height: max-content;
 }
 
@@ -361,33 +332,54 @@ body,
 }
 
 #patrocinio {
-  background-color: #121b31;
+  background-color: var(--background-color);
   padding-bottom: 2em;
 }
 
 #patrocinio .btn.btn-primary {
-  background-color: #233662;
-  border: #121b31;
+  background-color: var(--background-color-light);
+  border: var(--background-color);
 }
 
 #patrocinio .btn.btn-primary:hover,
 #patrocinio .btn.btn-primary:active,
 #patrocinio .btn.btn-primary:visited {
   margin: 0.5rem;
-  background-color: #233662;
-  border: #121b31;
+  background-color: var(--background-color-light);
+  border: var(--background-color);
 }
 
-#nav {
+.nav {
+  margin: 1rem 0;
   padding-bottom: 2em;
   font-family: "Shinkoya", sans-serif;
   font-size: 1.7rem;
+  background-color: var(--background-color-light);
+}
+
+.nav-link,
+.footer__address__location {
   color: white;
 }
 
-#nav a,
-#nav a:visited,
-#nav a:active,
-#nav a:hover {
+.link-apyb {
   color: white;
+}
+
+.footer__link {
+  /* text-decoration: none; */
+  color: var(--text-color-light);
+  margin-bottom: 1rem;
+}
+
+.nav a:active,
+.nav-link:focus {
+  color: var(--accent-primary-color);
+  box-shadow: var(--accent-primary-color);
+}
+.nav-link:hover {
+  color: var(--accent-primary-color);
+  border: 2px solid var(--accent-primary-color);
+  border-radius: 8px;
+  transition: ease-in 0.2;
 }
