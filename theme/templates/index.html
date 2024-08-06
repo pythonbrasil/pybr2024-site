@@ -1,10 +1,22 @@
 {% extends "theme/base.html" %}
 {% block body%}
-<section id="main">
+<section id="main" class="main">
+
   <section id="top">
   </section>
   <section id="wave">
   </section>
+  <nav id="nav" class="nav flex-lg-row justify-content-evenly p-4">
+    <div class="nav-item">
+      <a class="nav-link" href="#local">O evento</a>
+    </div>
+    <div class="nav-item">
+      <a class="nav-link" href="#patrocinio">Patrocine</a>
+    </div>
+    <div class="nav-item">
+      <a class="nav-link" href="#patrocinadores">Patrocinadores</a>
+    </div>
+  </nav>
   <section id="hero">
     <img src="/theme/images/hero.png" alt="python brasil - 16 a 21 de outubro de 2024  - rio de janeiro/rj" class="img-fluid">
   </section>
@@ -37,19 +49,9 @@
     </div>
   </section>
 </section>
-<nav class="navigation" role="navigation">
-  <a href="#local">O evento</a>
-  <a href="#patrocinio">Patrocine</a>
-  <a href="#patrocinio">Patrocinadores</a>
-</nav>
+
 <hr/>
-<!-- <div>
-  <section id="keynotes">
-    <h1 class="text-center scroll-to"><img class="img-section-title" src=".\theme\images\keynotes.png" alt="Keynotes"/></h1>
-  </section>
-</div> 
-<hr/>
--->
+
 <div>
   <section id="local">
     <h1 class="text-center scroll-to"><img class="img-section-title" src=".\theme\images\evento.png" alt="O evento"/></h1>
@@ -63,9 +65,9 @@
         </p>
       </div>
       <h2>18, 19 e 20 de outubro - Palestras</h2>
-      <div class="row pb-5">
-          <p class="pb-4 text-center">As palestras acontecerão no Centro de Convenções Bolsa do Rio,
-            na Praça XV, um extremamente local central no Rio de Janeiro.</p>
+      <div class="md-row pb-5">
+          <p class="pb-4 text-center">As palestras acontecerão no <strong> Centro de Convenções Bolsa do Rio,
+            na Praça XV </strong>, um extremamente local central na cidade do Rio de Janeiro.</p>
           <div class="row">
             <div class="col-sm-12 col-md-4 mb-3">
               <img src=".\theme\images\frente_local.jpg" class="rounded img-fluid" style="max-width: 100%; height: auto;"
@@ -112,7 +114,7 @@
   </div>
   <hr/>
   <section class="container text-center patrocinadores scroll-to">
-    <h1 class="text-center"><img class="img-section-title" src=".\theme\images\patrocinadores.png" alt="Patrocinadores"/></h1>
+    <h2 class="text-center"><img class="img-section-title" src=".\theme\images\patrocinadores.png" alt="Patrocinadores"/></h2>
     <!-- <section class="diamante">
       <h2>diamante</h2>
       <img src="theme/images/patrocinador-placeholder.png" alt="sua empresa aqui (diamante)">
@@ -128,7 +130,7 @@
       <img src="theme/images/patrocinador-placeholder.png" alt="sua empresa aqui (ouro)">
     </section> -->
     <div class="prata">
-      <h1>prata</h1>
+      <h3>prata</h3>
       <div class="row">
         <a href="https://lincolnloop.com" target="_blank">
           <img src="https://lincolnloop.com/static/assets/img/logo/lincolnloop-logo-full-white.d826b3e16074.svg" alt="lincoln loop">
@@ -138,7 +140,7 @@
   </section>
   <hr/>
   <section class="container text-center support scroll-to">
-    <h1>Apoio</h1>
+    <h3>Apoio</h3>
     <div class="row justify-content-center">
       <div class="col-md-2">
         <a href="https://lincolnloop.com" target="_blank">
@@ -168,7 +170,7 @@
 </section>
 <footer class="footer">
   <div class="footer__social">
-    <img src="/theme/images/logo-ly.png" alt="logo do evento python brasil 2024" class="logo">
+    <img src="/theme/images/logo-ly.png" alt="logo do evento python brasil 2024" class="footer__logo">
     <ul class="footer__social-list">
       {% if SOCIAL.twitter %}
       <li class="list-group-item">
@@ -220,56 +222,59 @@
       </li>
       {% endif %}
     </ul>
+    <p class="footer__desc">
+      Python Brasil é uma conferência sem fins lucrativos dirigida por voluntários para promover a linguagem de
+      programação código aberto Python.
+      A conferência é apoiada pela <a class="link-apyb" href="http://apyb.python.org.br">Associação Python Brasil (APyB)</a>.
+    </p>
   </div>
   <div class="footer__address">
     <h2 class="text-light">Endereço do evento</h2>
-    <address>
+    <address class="footer__address__location">
       <span>
-        <i class="fa-solid fa-location-dot"></i> Centro de Convenções Bolsa do Rio
+        <i class="fa-solid fa-location-dot"></i> <b> Centro de Convenções Bolsa do Rio</b> <br>
       </span>
       Edificio Bolsa do Rio, Praça Quinze de Novembro, 20 -
       Centro, Rio de Janeiro - RJ, 20010-010, Brasil
     </address>
   </div>
-  <div class="footer__sitemap">
-    <h2 class="text-light pb-4">Mapa do site</h2>
-    <ul class="footer__sitemap-list">
-      <li>
-        <a href="#" class="footer__link">Início</a>
-      </li>
-      <li>
-        <a href="#agenda" class="footer__link">Agenda</a>
-      </li>
-      <li>
-        <a href="#local" class="footer__link">
-          O evento
-        </a>
-      </li>
-      <li>
-        <a href="#patrocinio" class="footer__link">
-          Patrocínio
-        </a>
-      </li>
-    </ul>
-  </div>
-  <ul class="footer__links full-bled">
+
+
+<div class="footer__sitemap">
+  <h2 class="text-light pb-4">Mapa do site</h2>
+  <ul class="footer__sitemap-list">
     <li>
-      <a href="http://python.org.br/" class="footer__link">APyB</a>
+      <a href="#" class="footer__link">Início</a>
     </li>
     <li>
-      <a href="http://python.org.br/cdc/" class="footer__link"> Código de conduta </a>
+      <a href="#agenda" class="footer__link">Agenda</a>
     </li>
     <li>
-      <a href="http://python.org.br/premio-dorneles-tremea-jean-ferri" class="footer__link">
-        Prêmio Dorneles Tremea/Jean Ferri
+      <a href="#local" class="footer__link">
+        O evento
+      </a>
+    </li>
+    <li>
+      <a href="#patrocinio" class="footer__link">
+        Patrocínio
       </a>
     </li>
   </ul>
-  </div>
-  <p class="footer__desc full-bled">
-    Python Brasil é uma conferência sem fins lucrativos dirigida por voluntários para promover a linguagem de
-    programação Python de código aberto.
-    A conferência é apoiado pela Associação Python Brasil (APyB).
-  </p>
+</div>
+<ul class="footer__links full-bled">
+  <h2 class="text-light pb-4">Associação Python Brasil</h2>
+  <li>
+    <a href="http://python.org.br/" class="footer__link">APyB</a>
+  </li>
+  <li>
+    <a href="http://python.org.br/cdc/" class="footer__link"> Código de conduta </a>
+  </li>
+  <li>
+    <a href="http://python.org.br/premio-dorneles-tremea-jean-ferri" class="footer__link">
+      Prêmio Dorneles Treméa/Jean Ferri
+    </a>
+  </li>
+</ul>
+</div>
 </footer>
 {% endblock %}
