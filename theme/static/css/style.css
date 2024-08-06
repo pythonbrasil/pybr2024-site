@@ -201,25 +201,19 @@ h2 {
   padding-right: 1rem;
   width: 100%;
 }
-
-footer {
-  margin-top: 40px;
-  background-color: #02050e;
-}
-
 p {
-  color: white;
+  color: var(--text-color-light);
 }
-
 .footer {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  outline: 1px solid pink;
+  display: grid;
+  padding: 1.5rem;
+  background-color: #02050e;
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.footer__social {
-  outline: 1px red solid;
+.footer__desc {
+  color: var(--text-color-light);
+  max-width: 50%;
 }
 
 .footer__social-list {
