@@ -136,7 +136,7 @@ h2 {
 }
 
 #patrocinio .ouro img {
-  width: 10em;
+  width: 15em;
 }
 
 #patrocinio .prata img {
@@ -315,6 +315,10 @@ body,
   border-radius: 0.5em;
   color: var(--text-color);
   height: max-content;
+}
+
+.patrocinadores {
+  margin-top: 3em;
 }
 
 #patrocinio {
