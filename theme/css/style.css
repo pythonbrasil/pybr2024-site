@@ -317,7 +317,7 @@ body,
   height: max-content;
 }
 
-.patrocinadores {
+#ouro, #diamante, #prata {
   margin-top: 3em;
 }
 
