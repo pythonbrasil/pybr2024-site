@@ -88,7 +88,7 @@ h2 {
   margin: 0.5rem;
   padding: 1em;
   padding-right: 3em;
-  background-image: url("/theme/images/icon.png");
+  background-image: url("../images/icon.png");
   border-radius: 0.2em;
   text-align: right;
   background-position: right;
@@ -189,7 +189,7 @@ h2 {
 #cidade .praia {
   height: 30rem;
   background-size: cover;
-  background-image: url("/theme/images/rj-picture.png");
+  background-image: url("../images/rj-picture.png");
   margin: 0 auto;
 }
 
@@ -272,7 +272,7 @@ body,
 }
 
 #top {
-  background: url("/theme/images/nav.png");
+  background: url("../images/nav.png");
   height: 60px;
   background-position: center;
   background-repeat: no-repeat;
@@ -280,7 +280,7 @@ body,
 }
 
 #wave {
-  background: url("/theme/images/wave-big.png");
+  background: url("../images/wave-big.png");
   background-size: 150px 100%;
   height: 45px;
   background-position: center;

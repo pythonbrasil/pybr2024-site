@@ -1,5 +1,5 @@
 function onKonamiCode() {
-    window.location.href = '/theme/egg/game.html'
+    window.location.href = './theme/egg/game.html'
 }
 function onKonamiCodeGesture(event) {
   console.log(event.detail.name);

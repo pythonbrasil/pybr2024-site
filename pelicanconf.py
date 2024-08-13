@@ -57,7 +57,7 @@ EVENTO = {
 }
 
 PLANOS = {
-    'pt_br':'https://2024.pythonbrasil.org.br/theme/media_kits/proposta-de-patrocinio-pybr-2024.pdf',
+    'pt_br':'https://2024.pythonbrasil.org.br./theme/media_kits/proposta-de-patrocinio-pybr-2024.pdf',
     # 'en':'',
 }
 
