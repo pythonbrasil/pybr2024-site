@@ -208,9 +208,25 @@ p {
   display: grid;
   padding: 1.5rem;
   background-color: #02050e;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
+.footer div {
+  padding: 1.5rem;
+}
+
+.footer-row {
+  display: block;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__links li {
+  padding: 2em;
+}
 .footer__desc {
   color: var(--text-color-light);
   max-width: 50%;
@@ -219,6 +235,7 @@ p {
 .footer__social-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  max-width: 200px;
 }
 
 .footer__logo {
@@ -317,16 +334,16 @@ body,
   height: max-content;
 }
 
-#ouro, #diamante, #prata {
-  margin-top: 3em;
-}
-
 #patrocinio {
   margin-top: 0;
 }
 
 #patrocinio section {
-  margin-top: 2em;
+  margin-top: 4em;
+}
+
+#patrocinio .support {
+  margin-bottom: 4em;
 }
 
 #patrocinio {
