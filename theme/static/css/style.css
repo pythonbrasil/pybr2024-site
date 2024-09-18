@@ -200,10 +200,26 @@ h2 {
   padding-left: 1rem;
   padding-right: 1rem;
   width: 100%;
-}
-p {
   color: var(--text-color-light);
 }
+
+#local .card {
+  background-color: #57390C;
+  color: var(--text-color-light);
+  height: 312px;
+  padding: 32px;
+}
+
+#local .card a {
+  color: var(--accent-primary-color);
+}
+
+#local .card h3 {
+  color: #DCDBAD;
+  font-weight: normal;
+  text-align: center;
+}
+
 .footer {
   display: grid;
   padding: 1.5rem;
@@ -397,4 +413,21 @@ body,
   border: 2px solid var(--accent-primary-color);
   border-radius: 8px;
   transition: ease-in 0.2;
+}
+
+.wave-section-divider {
+  background: url("../images/section-divider.png");
+  height: 222px;
+  background-position: center;
+  background-repeat: repeat-x;
+}
+
+
+.wave-section-divider.orange {
+  background: url("../images/section-divider-orange.png");
+}
+
+
+.img-section-title {
+  height: 50px;
 }
