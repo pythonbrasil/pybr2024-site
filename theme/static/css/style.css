@@ -427,7 +427,14 @@ body,
   background: url("../images/section-divider-orange.png");
 }
 
-
-.img-section-title {
+#local .img-section-title {
   height: 50px;
+}
+
+#patrocinio .img-section-title {
+  height: 30px;
+}
+
+.nowrap {
+  white-space: nowrap;
 }
