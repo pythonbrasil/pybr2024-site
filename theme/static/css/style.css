@@ -224,7 +224,7 @@ h2 {
   display: grid;
   padding: 1.5rem;
   background-color: #02050e;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 40% 40% 20%;
 }
 
 .footer div {
@@ -243,23 +243,22 @@ h2 {
 .footer__links li {
   padding: 2em;
 }
-.footer__desc {
-  color: var(--text-color-light);
-  max-width: 50%;
-}
 
 .footer__social-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  max-width: 200px;
+  max-width: 300px;
+  grid-template-columns: repeat(8, 1fr);
 }
 
 .footer__logo {
   padding-bottom: 0.5rem;
 }
 .footer__desc {
+  color: var(--text-color-light);
+
   font-size: smaller;
   text-align: start;
+  max-width: 70%;
 }
 
 @media (max-width: 768px) {
