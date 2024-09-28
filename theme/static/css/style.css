@@ -21,10 +21,6 @@
   padding: 0;
 }
 
-iframe {
-  border: none; /* Remove a borda do iframe */
-}
-
 section {
   margin-top: 0px;
 }
@@ -125,6 +121,25 @@ h2 {
   margin: 0.5rem;
   background-color: #55180e;
   border: #55180e;
+}
+
+.sobre-title {
+  font-size: 52px;
+  font-family: "Shinkoya", sans-serif;
+}
+
+.sobre-container {
+  display: flex;
+  margin-top: 122px;
+  margin-bottom: 54px
+}
+
+.sobre-evento {
+  margin-left: 80px;
+}
+
+.sobre-container p {
+  font-size: 24px;
 }
 
 #main {
