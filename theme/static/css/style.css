@@ -268,6 +268,11 @@ h2 {
   max-width: 70%;
 }
 
+#patrocinio .img-section-title {
+  height: 30px;
+}
+
+
 @media (max-width: 768px) {
   .footer__address,
   .footer__social,
@@ -283,6 +288,10 @@ h2 {
   .text-light,
   .footer__desc {
     text-align: center
+  }
+
+  #patrocinio .img-section-title {
+    height: 20px;
   }
 
 }
@@ -446,10 +455,6 @@ body,
 
 #local .img-section-title {
   height: 50px;
-}
-
-#patrocinio .img-section-title {
-  height: 30px;
 }
 
 .nowrap {
