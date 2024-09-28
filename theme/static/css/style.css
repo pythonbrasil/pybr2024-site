@@ -21,6 +21,10 @@
   padding: 0;
 }
 
+iframe {
+  border: none; /* Remove a borda do iframe */
+}
+
 section {
   margin-top: 0px;
 }
