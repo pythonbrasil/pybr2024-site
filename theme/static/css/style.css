@@ -83,6 +83,12 @@ h2 {
   margin-right: 0.3rem;
 }
 
+.gentileza {
+  font-family: "Gentileza", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 7px
+}
+
 /* buttons */
 .btn {
   margin: 0.5rem;
@@ -123,24 +129,6 @@ h2 {
   border: #55180e;
 }
 
-.sobre-title {
-  font-size: 52px;
-  font-family: "Shinkoya", sans-serif;
-}
-
-.sobre-container {
-  display: flex;
-  margin-top: 122px;
-  margin-bottom: 54px
-}
-
-.sobre-evento {
-  margin-left: 80px;
-}
-
-.sobre-container p {
-  font-size: 24px;
-}
 
 #main {
   padding-bottom: 0;
@@ -281,13 +269,24 @@ h2 {
 }
 
 @media (max-width: 768px) {
+  .footer__address,
+  .footer__social,
   .footer {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
+    align-items: center;
   }
+
+  .footer__link,
+  .text-light,
+  .footer__desc {
+    text-align: center
+  }
+
 }
+
 
 .sticky {
   --bs-gutter-x: 0;
