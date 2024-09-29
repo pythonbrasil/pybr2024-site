@@ -2,6 +2,8 @@
   --primary-paragraph-color: #12152d;
   --accent-primary-color: #f8a123;
   --accent-secondary-color: #f14529;
+  --accent-neutral-color: #4D4D3D;
+  --accent-secondary-neutral-color: #DCDBAD;
   --background-color: #121b31;
   --background-color-light: #233662;
   --background-color-dark: #02050e;
@@ -85,65 +87,126 @@ h2 {
 
 /* seção dos keynotes */
 
+.keynotes {
+  margin-left: 70px;
+  margin-right: 70px
+}
+
+.palestrantes {
+  font-size: 52px;
+}
+
 .keynotes-card {
   display: flex;
   align-items: center;
   column-gap: 2rem;
   justify-content: center;
-  margin: 3.125rem 0
+  margin: 3.125rem 0;
+  background: var(--accent-neutral-color);
+  border-radius: 8px;
+  padding-top: 52px;
+  padding-bottom: 52px;
+  padding-right: 100px;
 }
 
-.keynotes-card.reverse {
-  flex-direction: row-reverse;
+.keynotes-profile {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  margin-left: 30px;
 }
 
-.keynote-profile-s {
-  text-align: left;
-  margin-left: 1.25rem;
-  margin-right: 14.125rem
+.profile-picture {
+  padding: 30px;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-.keynote-profile-e {
-  text-align: right;
-  margin-right: 1.25rempx;
-  margin-left: 14.125rem
+.keynotes-profile img:nth-child(2) {
+  margin-top: -65px;
+  width: 172px; 
+  height: auto;
 }
 
-.link-container {
-  display: flex; /* Coloca os itens lado a lado */
-  align-items: center; /* Alinha os itens verticalmente */
+.keynote-social {
+  margin-top: 20px;
+  color: var(--accent-secondary-neutral-color)
 }
 
-.copa-waves {
-  background: url("../images/ondas.png");
-  height: 100px;
-  background-position: center;
-  background-repeat: repeat-x;
-  opacity: 0.1;
+.keynotes-description p {
+  color: var(--accent-secondary-neutral-color)
+}
+
+.keynotes-description h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: bolder;
+  font-size: 40px;
 }
 
 @media (max-width: 768px) {
+  .keynotes {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
   .keynotes-card {
+    position: relative;
     flex-direction: column;
-    margin: 2rem 0;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    background: var(--accent-neutral-color);
+    border-radius: 8px;
+    margin-bottom: 100px
   }
 
-  .keynotes-card.reverse {
-    flex-direction: column; 
+  .keynotes-profile {
+    align-items: center;
+    margin-left: 0px;
+    position: relative;
   }
 
-  .keynote-profile-s,
-  .keynote-profile-e {
-    margin-left: 1rem; 
-    margin-right: 1rem;
-    text-align: center; 
+  .profile-picture {
+    width: 160px; 
+    height: 160px;
+    padding: 0px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 8px solid var(--accent-neutral-color);
+    position: absolute;
+    top: -70%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
-  .keynote-profile-s,
-  .keynote-profile-e h3 {
-    margin-top: 15px
+  .keynotes-profile img:nth-child(2) {
+    width: 120px; 
+    margin-top: 41px;
+    position: relative;
+    z-index: 1;
   }
 
+  .keynotes-description {
+    margin-top: 20px;
+  }
+
+  .keynotes-description h3 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .keynotes-description p {
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .keynote-social {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /* buttons */
@@ -319,7 +382,6 @@ h2 {
 }
 .footer__desc {
   color: var(--text-color-light);
-
   font-size: smaller;
   text-align: start;
   max-width: 70%;
