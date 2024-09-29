@@ -83,10 +83,67 @@ h2 {
   margin-right: 0.3rem;
 }
 
-.gentileza {
-  font-family: "Gentileza", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 7px
+/* seção dos keynotes */
+
+.keynotes-card {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  justify-content: center;
+  margin: 3.125rem 0
+}
+
+.keynotes-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.keynote-profile-s {
+  text-align: left;
+  margin-left: 1.25rem;
+  margin-right: 14.125rem
+}
+
+.keynote-profile-e {
+  text-align: right;
+  margin-right: 1.25rempx;
+  margin-left: 14.125rem
+}
+
+.link-container {
+  display: flex; /* Coloca os itens lado a lado */
+  align-items: center; /* Alinha os itens verticalmente */
+}
+
+.copa-waves {
+  background: url("../images/ondas.png");
+  height: 100px;
+  background-position: center;
+  background-repeat: repeat-x;
+  opacity: 0.1;
+}
+
+@media (max-width: 768px) {
+  .keynotes-card {
+    flex-direction: column;
+    margin: 2rem 0;
+  }
+
+  .keynotes-card.reverse {
+    flex-direction: column; 
+  }
+
+  .keynote-profile-s,
+  .keynote-profile-e {
+    margin-left: 1rem; 
+    margin-right: 1rem;
+    text-align: center; 
+  }
+
+  .keynote-profile-s,
+  .keynote-profile-e h3 {
+    margin-top: 15px
+  }
+
 }
 
 /* buttons */
