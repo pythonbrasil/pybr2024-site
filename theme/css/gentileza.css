@@ -1,0 +1,6 @@
+@font-face {
+    font-family: "Gentileza";
+    src: url('../fonts/gentileza/gentil.woff2') format('woff2'),
+         url('../fonts/gentileza/gentil.woff') format('woff'),
+         url('../fonts/fonts/gentileza/gentil.ttf') format('truetype');
+}

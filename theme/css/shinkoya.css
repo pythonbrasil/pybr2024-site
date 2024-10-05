@@ -18,6 +18,6 @@
   
 @font-face {
   font-family: "Shinkoya";
-  src: url('/theme/fonts/shinkoya/font.woff2') format('woff2'), url('/theme/fonts/shinkoya/font.woff') format('woff');
+  src: url('../fonts/shinkoya/font.woff2') format('woff2'), 
+       url('../fonts/shinkoya/font.woff') format('woff');
 }
-
