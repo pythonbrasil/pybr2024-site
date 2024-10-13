@@ -551,13 +551,10 @@ body,
 .nav a:active,
 .nav-link:focus {
   color: var(--accent-primary-color);
-  box-shadow: var(--accent-primary-color);
 }
 .nav-link:hover {
   color: var(--accent-primary-color);
-  border: 2px solid var(--accent-primary-color);
-  border-radius: 8px;
-  transition: ease-in 0.2;
+  transition: ease-in;
 }
 
 .wave-section-divider {
